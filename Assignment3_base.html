@@ -7,6 +7,8 @@
 <link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href = "style.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 .w3-bar-block .w3-bar-item {padding: 16px}
@@ -14,7 +16,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 <body>
 
 <!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:220px;" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:280px;" id="mySidebar">
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large">Insert Logo Here</a>
   <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
   class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
@@ -80,34 +82,48 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 </div>
 <!-- CONTAINER FOR WHOLE PAGE -->
 
-<div class ="Container">
+<div class ="Container" style="font-family: 'Quicksand', sans-serif;">
   <!-- TOPBAR CONTAINER -->
-  <div class = "TopBar" style = "display:flex; height:10%;background-color:  darkred;margin-left:220px;">
-    <div class = "SearchBar" style = "flex:1">IM SEARCH BAR</div>
+  <div class = "TopBar" style = "display:flex; height:10;margin-left:280px;">
+    <div class = "SearchBar" style = "flex:1;">
+      <div class = "Bar" style = "border-radius:5px;margin-left:30px;margin-top:12px;width:30%;height:25px;border:1px solid #000">
+        <img src="https://img.icons8.com/ios/64/000000/search--v1.png" style="width:16px; margin-left:5px;"/>
+        
+        <span style="opacity: 0.3;">Search in Project A3</span>
+      </div>
+    </div>
     <div class = "link-content">
       <nav>
-        <ul class = "nav-links" style = "display:flex;justify-content: space-around;">
-          <li> <a class = "nav-link" href = "#">icon</a></li>
-          <li> <a class = "nav-link" href = "#">icon </a></li>
-          <li> <a class = "nav-link" href = "#">icon</a></li>
-          <li> <a class = "nav-link" href = "#">icon </a></li>
+        <ul class = "nav-links" style = "display:flex;justify-content: space-around;align-items: center;margin-right: 10px;margin-bottom: 8px; margin-top: 8px;">
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/material-sharp/24/000000/settings.png" width="25px"></a></li>
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/metro/26/000000/ask-question.png" width="25px"> </a></li>
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/ios-filled/50/000000/menu.png" width ="25px"> </a></li>
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/doodle/48/000000/user.png" width="35px" > </a></li>
+          <li> Daniel</li>
         </ul>
       </nav>
     </div>
   </div>
-
+  <hr style = "margin-top: 0px;margin-bottom: 0px;height:1px;background-color:#747080">
     <!-- CONTENT CONTAINER -->
   <div class = "Content" style="display:flex">
 
-    <div class="w3-main" style="margin-left:220px;height:92vh;width:75%;background:crimson">
+    <div class="w3-main" style="margin-left:280px;height:92vh;width:75%">
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
     <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
     
-      <div class = "Heading" style="background: deeppink;height:7%;text-align: center;">
-        PROJECT ITEMS
+      <div class = "Heading" style="height:7%;text-align: center;margin-bottom:0px;margin-right:80px">
+        <ul style="display:flex;flex-direction: row;justify-content:space-evenly;list-style: none;">
+          <div class = "Heading-highlight" style="width:180px;height:30px;border-radius:18px;border:1px;background-color:#00FF71;text-align:inherit">
+          <span style = "line-height:30px; vertical-align: middle;">Project A3</span>
+          </div>
+          <li>Project A2</li>
+          <li>Project A1</li>
+        </ul>
+          <div class = "Horizontal-line" style="position:absolute;top:104px;width:46%;margin-left:150px;height:1px;background:#747080;"></div>
       </div>
 
-      <div class = "Quick Access" style="background-color: gold;height:25%;text-align: center;">
+      <div class = "Quick Access" style="height:25%;text-align: center;">
         QUICK ACCESS
       </div>
 
