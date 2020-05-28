@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Assignment 3 Base code Adapted from W3.CSS Template</title>
+<title>Assignment 3</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href = "style.css">
+<style>
 html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 .w3-bar-block .w3-bar-item {padding: 16px}
 </style>
 <body>
 
 <!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large"><i class="fa fa-edit"></i> &nbsp; Assignment 3 template <br/> based on
-  <span><img src="https://www.w3schools.com/images/w3schools.png" style="width:30%"></span> template</a>
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:220px;" id="mySidebar">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large">Insert Logo Here</a>
   <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
   class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">Share File <i class="w3-padding fa fa-pencil"></i></a>
@@ -73,51 +74,38 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
 
 <!-- Page content -->
-<div class="w3-main" style="margin-left:320px;">
-<i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
-<a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
-
-<div id="File1" class="w3-container file">
-  <br>
-  <img class="w3-round  w3-animate-top" src="./fileIcon3.png" style="width:20%;">
-  <h5 class="w3-opacity">File 1</h5>
-  <h4><i class="fa fa-clock-o"></i> File 1, Sep 27, 2015.</h4>
-  <a class="w3-button w3-light-grey" href="#">Share<i class="w3-margin-left fa fa-mail-reply"></i></a>
-  <a class="w3-button w3-light-grey" href="#">Delete<i class="w3-margin-left fa fa-arrow-right"></i></a>
-  <hr>
+</div>
+<div class ="Container">
   
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
- 
+  
+  <div class = "TopBar" style = "display:flex; height:10%;background-color:  darkred;margin-left:220px;">
+    <div class = "SearchBar" style = "flex:1">IM SEARCH BAR</div>
+    <div class = "link-content">
+      <nav>
+        <ul class = "nav-links" style = "display:flex;justify-content: space-around;">
+          <li> <a class = "nav-link" href = "#">icon</a></li>
+          <li> <a class = "nav-link" href = "#">icon </a></li>
+          <li> <a class = "nav-link" href = "#">icon</a></li>
+          <li> <a class = "nav-link" href = "#">icon </a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+  
+  
+  <div class = "Content" style="display:flex">
+
+    <div class="w3-main" style="margin-left:220px;height:100vh;width:75%;background:crimson">
+    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
+    <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+    </div>
+
+    <div class = "Progress-content" style= "height:100vh; width:15%;background-color:cyan ;">PROGRESS BAR</div>
+    </div>
+  </div>
 </div>
-
-<div id="File2" class="w3-container file">
-  <br>
-  <img class="w3-round w3-animate-top" src="./fileIcon5.png" style="width:20%;">
-  <h5 class="w3-opacity">File 2</h5>
-  <h4><i class="fa fa-clock-o"></i> File 2, Sep 25, 2015.</h4>
-  <a class="w3-button w3-light-grey">Share<i class="w3-margin-left fa fa-mail-reply"></i></a>
-  <a class="w3-button w3-light-grey">Delete<i class="w3-margin-left fa fa-arrow-right"></i></a>
-  <hr>
-  <p>A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-</div>
-
-<div id="File3" class="w3-container file">
-  <br>
-  <img class="w3-round w3-animate-top" src="./fileIcon2.png" style="width:20%;">
-  <h5 class="w3-opacity">File 3</h5>
-  <h4><i class="fa fa-clock-o"></i> File 3, Sep 23, 2015.</h4>
-  <a class="w3-button w3-light-grey">Share<i class="w3-margin-left fa fa-mail-reply"></i></a>
-  <a class="w3-button w3-light-grey">Delete<i class="w3-margin-left fa fa-arrow-right"></i></a>
-  <hr>
-
-</div>
-     
-</div>
-
 <script>
-var openInbox = document.getElementById("myBtn");
-openInbox.click();
 
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
@@ -141,7 +129,7 @@ function myFunc(id) {
   }
 }
 
-doShare("File1")
+
 function doShare(fileName) {
   var i;
   var x = document.getElementsByClassName("file");
