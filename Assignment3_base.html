@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href = "style.css">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
@@ -122,9 +123,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
         <div class = "text-box" style = "margin-top:10px;width:94%;height:45%;border:1px solid rgba(114, 113, 113, 0.795);border-radius:4px;">
           <span style="color:#000;font-size:12px;margin-left:5px;"> Hey Ricky, its me Daniel...</span>
         </div>
-
+        
         <div class = "buttons" style="position:relative">
-          <button class="button1" onclick="change()">
+          <button class="button1"  onclick= "document.getElementById('confID').style.display = 'block'">        
             <span id="button1" style = "font-size:13px">Send</span>
           </button>
           <button class="button2">
@@ -132,14 +133,25 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
           </button>
           <span style="color:rgba(112, 107, 107, 0.932);position:absolute;font-size:12px;left:270px;top:14px;">Advanced</span>
         </div>
-        
-        
-
       </div>
-    
     </div>
-  
   </div>
+</div>
+
+<!--  Confirmation that pops up when you click Send -->
+<div id="confID" class = "w3-modal" style="z-index:4;margin:0px;">
+  <div class="w3-modal-content w3-animate-zoom" style="margin-top:120px;border:2px solid green;border-radius:6px;width:20%;height:23vh;font-family: 'Karla', sans-serif;">
+    <div class = "pop-content" style ="text-align: center;padding-top:3px;">
+      <heading style="font-size:16px;">Share file <span style ="color:darkmagenta">Hello.html</span> to <span style="color:orangered">Ricky?</span></heading>
+      <hr style="height:1px;margin-top:2px;width:80%;margin:auto;background-color:crimson;"></hr>
+      <div class = "privileges" style="display:inline-block">
+        <p><pre>Privileges: <img style="opacity:0.3;" src="https://img.icons8.com/material-sharp/22/000000/edit.png"> <img src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/> <img style= "opacity:0.3;" src="https://img.icons8.com/ios-glyphs/22/000000/trash--v1.png"/></p></pre>
+        <input type="checkbox" checked="checked" id="notify" name="notify">
+        <label style="padding-left: 7px;">  Notify everyone</label>
+        <br>
+        <pre><button class="yes-button" onclick="change();"><span id="yes-button">Yes</span></button>    <button class="cancel-button"  onclick = "close_pop()" type="button"><span id="cancel-button"> Cancel</span></button></pre>
+      </div>
+    </div>
 </div>
 
 <!-- Overlay effect when opening the side navigation on small screens -->
@@ -244,6 +256,10 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
+function close_pop(){
+  document.getElementById("confID").style.display = "none";
+  document.getElementById("yes-button").innerHTML = "Yes";
+}
 function myFunc(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
@@ -257,8 +273,9 @@ function myFunc(id) {
 }
 var iter = 0;
 function change() {
-  var x = document.getElementById("button1")
-  var y = document.getElementById("button2")
+  var x = document.getElementById("yes-button")
+  var y = document.getElementById("cancel-button")
+
   var messages = ["Sending", "Sending.", "Sending..", "Sending...","Message Sent"];
   x.innerHTML = messages[iter%messages.length];
   if(iter===4) {
@@ -267,8 +284,6 @@ function change() {
   }
   iter++;
   setTimeout(change,1000)
-  
-  
 
 }
 function doShare(fileName) {
