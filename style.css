@@ -68,3 +68,43 @@
 
 }
 
+.share-panel {
+    background-color: darkred;
+}
+
+.buttons {
+    margin-top:16px;
+    margin-left:50px;
+    transition-duration: 0.2s;
+}
+.button1 {
+    background-color: white;
+    cursor:pointer;
+    width:90px;
+    text-align:center;
+    color:rgb(0, 0, 0);
+    border:1px solid rgb(5, 218, 23);
+    text-decoration: none;
+    border-radius:4px;
+}
+.button2 {
+    background-color: white;
+    cursor:pointer;
+    width:90px;
+    text-align:center;
+    margin-left:34px;
+    color:rgb(0, 0, 0);
+    border:1px solid rgb(185, 190, 186);
+    text-decoration: none;
+    border-radius:4px;
+}
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+.button2:hover {
+    background-color: rgb(206, 10, 10);
+    color: white;
+}
+

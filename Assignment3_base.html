@@ -54,26 +54,91 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 </nav>
 
 <!-- Modal that pops up when you click on "Share File" -->
-<div id="id01" class="w3-modal" style="z-index:4">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-padding w3-red">
+<div id="id01" class="w3-modal" style="z-index:4;margin:0px;">
+  <div class="w3-modal-content w3-animate-zoom" style="border-radius:20px;width:40%;height:50vh">
+    <div class="heading" style = "text-align: center;background-color:#EF2230;border-radius:20px;height:8%">
        <span onclick="document.getElementById('id01').style.display='none'"
-       class="w3-button w3-red w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
-      <h2>Share File</h2>
+       class="w3-button w3-right" style="background: url(https://img.icons8.com/material/30/000000/close-window--v1.png);height:29px;width:10px;">
+      </span>
+      <h2 style="color:white; font-size: 18px;">Share File: Hello.html</h2>
     </div>
-    <div class="w3-panel">
-      <label>To</label>
-      <input class="w3-input w3-border w3-margin-bottom" type="text">
-      <label>From</label>
-      <input class="w3-input w3-border w3-margin-bottom" type="text">
-      <label>File</label>
-      <input class="w3-input w3-border w3-margin-bottom" type="text">
-      <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="Message">
-      <div class="w3-section">
-        <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
-        <a class="w3-button w3-light-grey w3-right" onclick="document.getElementById('id01').style.display='none'">Share  <i class="fa fa-paper-plane"></i></a> 
-      </div>    
+
+    <div class="Share-container" style="display:flex;width:100%;height:100%;padding-bottom:70px;">
+      
+      <div class = "left-container" style="display:flex;flex:1.1;flex-direction:column;height:100%;">
+        <span style="font-size: 12px; margin-top:7px;margin-left:15px;margin-bottom:7px;"> Sharing Privilege: Owner</span>
+        
+        <div class = "caption-wrapper" style = "flex:1;text-align: center;">
+          <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png">
+          <span style = "position:absolute;
+          left:73px;
+          top:158px;
+          font-size:80%;
+          font-weight: lighter;
+          color: rgb(116, 109, 109);"> Hello.html</span>
+          <p style = "position:absolute;
+          left:38px;
+          top:163px;
+          font-size:80%;
+          font-weight: lighter;
+          color: rgb(116, 109, 109);">last modified: 21/04/2020</p>
+          <p style = "font-size:80%;margin-top:25px;color:#878F8F;font-weight: bold;">Shared with Raymond Yang, John Castro, Meng Li and 2 others</p>
+        </div>
+       
+        
+        <div class = "radiobutton-wrapper" style="flex:0.5;font-family: 'Quicksand', sans-serif;">
+          <form class = "checkboxes" style = "margin-left:21%;margin-top:9%">
+            <input type="checkbox" checked="checked" id="notify" name="notify">
+            <label style="padding-left: 7px;" for="vehicle1">  Notify everyone</label><br>
+            <input type="checkbox" id="share" name="share">
+            <label style="padding-left: 7px;"for="vehicle2">Share a copy</label><br>
+            <input type="checkbox" checked="checked" id="note" name="note">
+            <label style="padding-left: 7px;"for="vehicle3">Add note</label><br><br>
+          </form>
+        </div>
+          
+      </div>
+      
+      <div class = "right-container" style="flex:2;height:100%;color:rgb(255, 255, 255);font-weight:bold">
+        <div class = "container" style="font-size:0;">
+          <p style="margin-left:260px;margin-top:2px;margin-right:2px;color:#878F8F;font-size:12px;">
+            Get shareable link <img src="https://img.icons8.com/material-sharp/24/000000/link.png"/>
+          </p>
+          <div class ="Name-highlight" style="font-size:15px;width:90px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);text-align: center;">
+            <span style = "line-height:30px; vertical-align: middle;"><pre>  People      <span style="color:black">Groups</span></pre></span>
+          </div>
+        </div>
+        <div class = "Bar" style = "border-radius:5px;margin-left:0px;margin-top:8px;width:94%;height:25px;border:1px solid #000;">
+          <span style="margin-left:7px;font-size:13.7px;opacity: 0.2;color:black;font-weight:lighter;">Enter names or email addresses</span>
+          <img style = "margin-left:115px;width:5%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
+          <img style = "width:5%;" src="https://img.icons8.com/material/24/000000/give-way.png"/>
+        </div>
+        
+        <div class ="Names" style="position:relative" >
+          <div class = "Names" style = "position:absolute;top:0px;left:0px;line-height:15px; vertical-align: middle;"><pre><span style="color:black">  New    Alex</span>    Ricky    <span style="color:black">Jack</span></pre></div>
+        </div>
+        <div class = "Name-highlight" style="margin-top:7px;margin-left:130px;width:62px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);"></div>
+
+        <div class = "text-box" style = "margin-top:10px;width:94%;height:45%;border:1px solid rgba(114, 113, 113, 0.795);border-radius:4px;">
+          <span style="color:#000;font-size:12px;margin-left:5px;"> Hey Ricky, its me Daniel...</span>
+        </div>
+
+        <div class = "buttons" style="position:relative">
+          <button class="button1">
+            <span style = "font-size:13px">Send</span>
+          </button>
+          <button class="button2">
+            <span style = "font-size:13px">Cancel</span>
+          </button>
+          <span style="color:rgba(112, 107, 107, 0.932);position:absolute;font-size:12px;left:270px;top:14px;">Advanced</span>
+        </div>
+        
+        
+
+      </div>
+    
     </div>
+  
   </div>
 </div>
 
