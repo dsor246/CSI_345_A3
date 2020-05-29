@@ -58,7 +58,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
   <div class="w3-modal-content w3-animate-zoom" style="border-radius:20px;width:40%;height:50vh">
     <div class="heading" style = "text-align: center;background-color:#EF2230;border-radius:20px;height:8%">
        <span onclick="document.getElementById('id01').style.display='none'"
-       class="w3-button w3-right" style="background: url(https://img.icons8.com/material/30/000000/close-window--v1.png);height:29px;width:10px;">
+       class="w3-button w3-right" style="background: url(https://img.icons8.com/material-sharp/30/000000/cancel.png);height:29px;width:20px;">
       </span>
       <h2 style="color:white; font-size: 18px;">Share File: Hello.html</h2>
     </div>
@@ -124,11 +124,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
         </div>
 
         <div class = "buttons" style="position:relative">
-          <button class="button1">
-            <span style = "font-size:13px">Send</span>
+          <button class="button1" onclick="change()">
+            <span id="button1" style = "font-size:13px">Send</span>
           </button>
           <button class="button2">
-            <span style = "font-size:13px">Cancel</span>
+            <span id="button2" style = "font-size:13px">Cancel</span>
           </button>
           <span style="color:rgba(112, 107, 107, 0.932);position:absolute;font-size:12px;left:270px;top:14px;">Advanced</span>
         </div>
@@ -255,8 +255,22 @@ function myFunc(id) {
     x.previousElementSibling.className.replace(" w3-red", "");
   }
 }
+var iter = 0;
+function change() {
+  var x = document.getElementById("button1")
+  var y = document.getElementById("button2")
+  var messages = ["Sending", "Sending.", "Sending..", "Sending...","Message Sent"];
+  x.innerHTML = messages[iter%messages.length];
+  if(iter===4) {
+    y.innerHTML = "Undo";
+    return;
+  }
+  iter++;
+  setTimeout(change,1000)
+  
+  
 
-
+}
 function doShare(fileName) {
   var i;
   var x = document.getElementsByClassName("file");
