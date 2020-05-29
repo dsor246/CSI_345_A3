@@ -39,3 +39,32 @@
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	
 }
+
+.Quick_Access_Folder {
+    width:70%;
+    border: 15px solid rgba(132, 146, 166, 0.144);
+    border-radius:10px;
+   
+}
+.image_wrapper {
+    position:relative;
+}
+.image_wrapper span{
+    position:absolute;
+    left:59px;
+    top:111px;
+    font-size:80%;
+    font-weight: lighter;
+    color: rgb(116, 109, 109);
+
+}
+.image_wrapper p{
+    position:absolute;
+    left:13px;
+    top:120px;
+    font-size:80%;
+    font-weight: lighter;
+    color: rgb(116, 109, 109);
+
+}
+
