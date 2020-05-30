@@ -185,13 +185,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
   </div>
   <hr style = "margin-top: 0px;width:81.6%;margin-left:auto;margin-bottom: 0px;height:1px;background-color:#747080">
     <!--WHOLE CONTENT CONTAINER -->
-  <div class = "Content" style="display:flex">
+  <div class = "Content" style="display:flex;">
 
-    <div class="w3-main" style="margin-left:280px;height:92vh;width:75%">
+    <div class="w3-main" style="margin-left:280px;height:92vh;width:75%;">
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
     <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
     
-      <div class = "Heading" style="height:7%;text-align: center;margin-bottom:0px;margin-right:80px">
+      <div class = "Heading" style="display:block;height:12%;text-align: center;margin-bottom:0px;margin-right:80px">
         <ul style="letter-spacing:2px;display:flex;flex-direction: row;justify-content:space-evenly;list-style: none;">
           <div class = "Heading-highlight" style="width:180px;height:30px;border-radius:18px;border:1px;background-color:#00FF71;text-align:inherit">
           <span style = "line-height:30px; vertical-align: middle;">Project A3</span>
@@ -199,7 +199,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
           <li>Project A2</li>
           <li>Project A1</li>
         </ul>
-          <div class = "Horizontal-line" style="position:absolute;top:104px;width:46%;margin-left:150px;height:1px;background:#747080;"></div>
+        <div class = "Horizontal-line" style="position:absolute;top:104px;width:46%;margin-left:150px;height:1px;background:#747080;"></div>
+        <div class = "sub-heading"; style="display:inline-block;">
+          <pre style ="margin-top:0px;font-weight: 300;letter-spacing:3px;">Report    <mark class = "web-class" id = "web-page">WebPage</mark>     Draft</pre>
+        </div>
       </div>
 
       <div class = "Quick_Access" style="height:25%;text-align: left;">
@@ -299,6 +302,11 @@ function close_share(){
 function close_pop(){
   document.getElementById("confID").style.display = "none";
   document.getElementById("yes-button").innerHTML = "Yes";
+}
+
+function showReport() {
+  document.getElementById("web-page")
+
 }
 function myFunc(id) {
   var x = document.getElementById(id);
