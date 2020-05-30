@@ -161,5 +161,22 @@
     background-color: rgb(206, 10, 10);
     color: white;
 }
+.thumbnail #previewed{
+    width:400px;
+    position:absolute;
+    z-index:50;
+    top: -100px;
+    left: 110px;
+    border-width:3px;
+    border-style: solid;
+    border-color: rgb(234, 0, 255);
+    border-radius:5px;
+    visibility:hidden;
+}
+.thumbnail:hover #previewed{
+    visibility:visible
+}
+
+
 
 

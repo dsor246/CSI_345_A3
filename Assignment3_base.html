@@ -69,7 +69,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
       <div class = "left-container" style="display:flex;flex:1.1;flex-direction:column;height:100%;">
         <span style="font-size: 12px; margin-top:7px;margin-left:15px;margin-bottom:7px;"> Sharing Privilege: Owner</span>
         
-        <div class = "caption-wrapper" style = "flex:1;text-align: center;">
+        <div class = "caption-wrapper" style = "flex:1;text-align:center;">
+          <img class = "preview-button" style = "position:absolute;width:19px;left:27%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
           <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png">
           <span style = "position:absolute;
           left:73px;
@@ -129,7 +130,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
             <span id="button1" style = "font-size:13px">Send</span>
           </button>
           <button class="button2">
-            <span id="button2" style = "font-size:13px">Cancel</span>
+            <span id="button2" onclick="close_share();" style = "font-size:13px">Cancel</span>
           </button>
           <span style="color:rgba(112, 107, 107, 0.932);position:absolute;font-size:12px;left:270px;top:14px;">Advanced</span>
         </div>
@@ -142,6 +143,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 <div id="confID" class = "w3-modal" style="z-index:4;margin:0px;">
   <div class="w3-modal-content w3-animate-zoom" style="margin-top:120px;border:2px solid green;border-radius:6px;width:20%;height:23vh;font-family: 'Karla', sans-serif;">
     <div class = "pop-content" style ="text-align: center;padding-top:3px;">
+      <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
       <heading style="font-size:16px;">Share file <span style ="color:darkmagenta">Hello.html</span> to <span style="color:orangered">Ricky?</span></heading>
       <hr style="height:1px;margin-top:2px;width:80%;margin:auto;background-color:crimson;"></hr>
       <div class = "privileges" style="display:inline-block">
@@ -205,18 +207,28 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
         <div class = "Quick_Access">
           <div class = Quick_Access_Folders  style = "display:flex;flex-direction:row;list-style: none;margin-left:50px;margin-top:7px;">
             <div class = "image_wrapper">
+              <a class = "thumbnail" href="#">
+              <span><img id = "previewed" src="Quick_Access_images/html.png"></span>
+              <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+              </a>
               <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span> Hello.html</span>
               <p>last modified: 21/04/2020</p>
             </div>
             <div class = "image_wrapper">
+              <a class = "thumbnail" href="#">
+                <span><img id = "previewed" src="Quick_Access_images/html.png"></span>
+                <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+                </a>
               <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span> Hello.html </span>
               <p>last modified: 20/04/2020</p>
             </div>
             <div class = "image_wrapper">
+              <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
               <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span> Hello.html </span>
               <p>last modified: 19/04/2020</p>
             </div>
             <div class = "image_wrapper">
+              <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
               <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span> Hello.html </span>
               <p>last modified: 18/04/2020</p>
             </div>
@@ -261,8 +273,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
           </div>
         </div>
       </div>
-
-
     <!-- PROGRESS CONTAINER -->
     <div class = "Progress-content" style= "height:92vh; width:15%;background-color:cyan ;">PROGRESS BAR</div>
     </div>
@@ -280,6 +290,10 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
+}
+
+function close_share(){
+  document.getElementById("id01").style.display = "none";
 }
 
 function close_pop(){
@@ -302,10 +316,15 @@ function change() {
   var x = document.getElementById("yes-button")
   var y = document.getElementById("cancel-button")
 
-  var messages = ["Sending", "Sending.", "Sending..", "Sending...","Message Sent"];
-  x.innerHTML = messages[iter%messages.length];
+  if (iter <=4) {
+    var messages = ["Sending", "Sending.", "Sending..", "Sending...","Message Sent"];
+    x.innerHTML = messages[iter%messages.length];
+  }
   if(iter===4) {
     y.innerHTML = "Undo";
+  }
+  if (iter===7) {
+    y.innerHTML = "Close"
     return;
   }
   iter++;
