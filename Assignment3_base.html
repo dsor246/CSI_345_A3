@@ -61,41 +61,28 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
        <span onclick="document.getElementById('id01').style.display='none'"
        class="w3-button w3-right" style="background: url(https://img.icons8.com/material-sharp/30/000000/cancel.png);height:29px;width:20px;">
       </span>
-      <h2 style="color:white; font-size: 18px;">Share File: Hello.html</h2>
+      <h2 style="color:white; font-size: 23px;">Share File: Hello.html</h2>
     </div>
 
     <div class="Share-container" style="display:flex;width:100%;height:100%;padding-bottom:70px;">
       
       <div class = "left-container" style="display:flex;flex:1.1;flex-direction:column;height:100%;">
-        <span style="font-size: 12px; margin-top:7px;margin-left:15px;margin-bottom:7px;"> Sharing Privilege: Owner</span>
-        
-        <div class = "caption-wrapper" style = "flex:1;text-align:center;">
-          <img class = "preview-button" style = "position:absolute;width:19px;left:27%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
-          <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png">
-          <span style = "position:absolute;
-          left:73px;
-          top:158px;
-          font-size:80%;
-          font-weight: lighter;
-          color: rgb(116, 109, 109);"> Hello.html</span>
-          <p style = "position:absolute;
-          left:38px;
-          top:163px;
-          font-size:80%;
-          font-weight: lighter;
-          color: rgb(116, 109, 109);">last modified: 21/04/2020</p>
-          <p style = "font-size:80%;margin-top:25px;color:#878F8F;font-weight: bold;">Shared with Raymond Yang, John Castro, Meng Li and 2 others</p>
+        <span style="font-size: 14px; margin-top:7px;margin-left:15px;margin-bottom:7px;"> Sharing Privilege: Owner</span>
+        <div class = "image_wrapper" style = "margin-left:16%; width:100%;">
+          <a class = "thumbnail" href="#">
+          <span><img id = "previewed" src="Quick_Access_images/html.png"></span>
+          <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+          </a>
+          <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:0%;"> Hello.html</span>
+          <p style = "margin-top:10%;margin-left:5%;">last modified: 21/04/2020</p>
         </div>
-       
         
-        <div class = "radiobutton-wrapper" style="flex:0.5;font-family: 'Quicksand', sans-serif;">
-          <form class = "checkboxes" style = "margin-left:21%;margin-top:9%">
-            <input type="checkbox" checked="checked" id="notify" name="notify">
-            <label style="padding-left: 7px;" for="vehicle1">  Notify everyone</label><br>
-            <input type="checkbox" id="share" name="share">
-            <label style="padding-left: 7px;"for="vehicle2">Share a copy</label><br>
-            <input type="checkbox" checked="checked" id="note" name="note">
-            <label style="padding-left: 7px;"for="vehicle3">Add note</label><br><br>
+        <span style = "margin-left:10%;height:5%;width:90%;margin-top:15%;font-size:120%;color:rgb(120, 120, 120);font-weight:bold">Shared with Raymond, John and 2 others</span>
+        
+        <div class = "radiobutton-wrapper" style="width:90%;flex:0.5;font-family: 'Quicksand', sans-serif;margin-top:19%;margin-left:22%;font-size:19px;">
+          <li style = "list-style: none"> <input type="checkbox" id="html" name="todo"  checked value="Bike"> Notify everyone</li>
+          <li style = "list-style: none"> <input type="checkbox" id="html" name="todo" checked  value="Bike"> Share a copy</li>
+          <li style = "list-style: none"> <input type="checkbox" id="html" name="todo"   value="Bike"> Add a note</li>
           </form>
         </div>
           
@@ -103,36 +90,36 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
       
       <div class = "right-container" style="flex:2;height:100%;color:rgb(255, 255, 255);font-weight:bold">
         <div class = "container" style="font-size:0;">
-          <p style="margin-left:260px;margin-top:2px;margin-right:2px;color:#878F8F;font-size:12px;">
+          <p style="margin-left:70%;margin-top:2px;margin-right:2px;color:#878F8F;font-size:14px;">
             Get shareable link <img src="https://img.icons8.com/material-sharp/24/000000/link.png"/>
           </p>
-          <div class ="Name-highlight" style="font-size:15px;width:90px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);text-align: center;">
+          <div class ="Name-highlight" style="font-size:17px;width:90px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);text-align: center;">
             <span style = "line-height:30px; vertical-align: middle;"><pre>  People      <span style="color:black">Groups</span></pre></span>
           </div>
         </div>
         <div class = "Bar" style = "border-radius:5px;margin-left:0px;margin-top:8px;width:94%;height:25px;border:1px solid #000;">
           <span style="margin-left:7px;font-size:13.7px;opacity: 0.2;color:black;font-weight:lighter;">Enter names or email addresses</span>
-          <img style = "margin-left:115px;width:5%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
+          <img style = "margin-left:43%;width:5%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
           <img style = "width:5%;" src="https://img.icons8.com/material/24/000000/give-way.png"/>
         </div>
         
         <div class ="Names" style="position:relative" >
-          <div class = "Names" style = "position:absolute;top:0px;left:0px;line-height:15px; vertical-align: middle;"><pre><span style="color:black">  New    Alex</span>    Ricky    <span style="color:black">Jack</span></pre></div>
+          <div class = "Names" style = "font-size:17px;position:absolute;top:0px;left:0px;line-height:15px; vertical-align: middle;"><pre><span style="color:black">  New    Alex</span>    Ricky    <span style="color:black">Jack</span></pre></div>
         </div>
-        <div class = "Name-highlight" style="margin-top:7px;margin-left:130px;width:62px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);"></div>
+        <div class = "Name-highlight" style="margin-top:9px;margin-left:152px;width:62px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);"></div>
 
-        <div class = "text-box" style = "margin-top:10px;width:94%;height:45%;border:1px solid rgba(114, 113, 113, 0.795);border-radius:4px;">
-          <span style="color:#000;font-size:12px;margin-left:5px;"> Hey Ricky, its me Daniel...</span>
+        <div class = "text-box" style = "margin-top:15px;width:94%;height:45%;border:1px solid rgba(114, 113, 113, 0.795);border-radius:4px;">
+          <span style="color:#000;font-size:14px;margin-left:9px;padding-top:20px;"> Hey Ricky, its me Daniel...</span>
         </div>
         
-        <div class = "buttons" style="position:relative">
+        <div class = "buttons" style="position:relative;margin-top:7%;margin-left:0%;">
           <button class="button1"  onclick= "document.getElementById('confID').style.display = 'block'">        
             <span id="button1" style = "font-size:13px">Send</span>
           </button>
           <button class="button2">
             <span id="button2" onclick="close_share();" style = "font-size:13px">Cancel</span>
           </button>
-          <span style="color:rgba(112, 107, 107, 0.932);position:absolute;font-size:12px;left:270px;top:14px;">Advanced</span>
+          <span style="color:rgba(112, 107, 107, 0.932);position:absolute;font-size:14px;left:85%;top:70%;">Advanced</span>
         </div>
       </div>
     </div>
@@ -140,7 +127,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 </div>
 
 <!--  Confirmation that pops up when you click Send -->
-<div id="confID" class = "w3-modal" style="z-index:4;margin:0px;">
+<div id="confID" class = "w3-modal" style="z-index:4;margin:0px;font-size:18px;">
   <div class="w3-modal-content w3-animate-zoom" style="margin-top:120px;border:2px solid green;border-radius:6px;width:20%;height:23vh;font-family: 'Karla', sans-serif;">
     <div class = "pop-content" style ="text-align: center;padding-top:3px;">
       <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
@@ -151,7 +138,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
         <input type="checkbox" checked="checked" id="notify" name="notify">
         <label style="padding-left: 7px;">  Notify everyone</label>
         <br>
-        <pre><button class="yes-button" onclick="change();"><span id="yes-button">Yes</span></button>    <button class="cancel-button"  onclick = "close_pop()" type="button"><span id="cancel-button"> Cancel</span></button></pre>
+        <pre style = "margin-top:12%;"><button class="yes-button" onclick="change();"><span id="yes-button">Yes</span></button>    <button class="cancel-button"  onclick = "close_pop()" type="button"><span id="cancel-button">Cancel</span></button></pre>
       </div>
     </div>
 </div>
@@ -214,26 +201,26 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
               <span><img id = "previewed" src="Quick_Access_images/html.png"></span>
               <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
               </a>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span> Hello.html</span>
-              <p style = "margin-top:5%;margin-left:0%;">last modified: 21/04/2020</p>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:1%;"> Hello.html</span>
+              <p style = "margin-top:15%;margin-left:7%;">last modified: 21/04/2020</p>
             </div>
             <div class = "image_wrapper">
               <a class = "thumbnail" href="#">
                 <span><img id = "previewed" src="Quick_Access_images/html.png"></span>
                 <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
                 </a>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span> Hello.html </span>
-              <p style = "margin-top:5%;margin-left:0%;">last modified: 20/04/2020</p>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:1%;"> Hello.html </span>
+              <p style = "margin-top:15%;margin-left:7%;">last modified: 20/04/2020</p>
             </div>
             <div class = "image_wrapper">
               <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span> Hello.html </span>
-              <p style = "margin-top:5%;margin-left:0%;">last modified: 19/04/2020</p>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:1%;"> Hello.html </span>
+              <p style = "margin-top:15%;margin-left:7%;">last modified: 19/04/2020</p>
             </div>
             <div class = "image_wrapper">
               <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span> Hello.html </span>
-              <p style = "margin-top:5%;margin-left:0%;">last modified: 18/04/2020</p>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:1%;"> Hello.html </span>
+              <p style = "margin-top:15%;margin-left:7%;">last modified: 18/04/2020</p>
             </div>
           </div>
         </div>
@@ -253,6 +240,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
               </h3>
             </div>
             <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;">
+              
               <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px">
               <p style="margin-top: 50px; margin-left: 80px;">Hello.html</p>
               <p style="margin-top: 70px; margin-left: 40px">last modified: 21/04/2020</p>
