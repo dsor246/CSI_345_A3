@@ -1,3 +1,7 @@
+html {
+    zoom:100%;
+}
+
 .nav-links {
     justify-content: space-around;
     list-style: none;
