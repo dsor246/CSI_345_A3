@@ -66,7 +66,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 
     <div class="Share-container" style="display:flex;width:100%;height:100%;padding-bottom:70px;">
       
-      <div class = "left-container" style="display:flex;flex:1.1;flex-direction:column;height:100%;">
+      <div class = "left-container" style="overflow:hidden;display:flex;flex:1.1;flex-direction:column;height:100%;">
         <span style="font-size: 14px; margin-top:7px;margin-left:15px;margin-bottom:7px;"> Sharing Privilege: Owner</span>
         <div class = "image_wrapper" style = "margin-left:16%; width:100%;">
           <a class = "thumbnail" href="#">
@@ -148,29 +148,29 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 </div>
 <!-- CONTAINER FOR WHOLE PAGE -->
 
-<div class ="Container force-overflow scrollbar1 style-2" style="font-family: 'Quicksand', sans-serif;overflow:display">
+<div class ="Container scrollbar1 style-2" style="font-family: 'Quicksand', sans-serif;overflow-x:hidden;">
   <!-- TOPBAR CONTAINER -->
   <div class = "TopBar" style = "display:flex; height:10;margin-left:280px;">
     <div class = "SearchBar" style = "flex:1;">
-      <div class = "Bar" style = "border-radius:5px;margin-left:30px;margin-top:12px;width:30%;height:25px;border:1px solid #000">
-        <img src="https://img.icons8.com/ios/64/000000/search--v1.png" style="width:16px; margin-left:5px;"/>
+      <div class = "Bar" style = "border-radius:5px;margin-left:30px;margin-top:12px;width:50%;height:30px;border:1px solid #000">
+        <img src="https://img.icons8.com/ios/64/000000/search--v1.png" style="width:20px;margin-top:-8px; margin-left:5px;"/>
         
-        <span style="opacity: 0.3;">Search in Project A3</span>
+        <span style="opacity: 0.3;font-size:20px;">Search in Project A3</span>
       </div>
     </div>
     <div class = "link-content">
       <nav>
         <ul class = "nav-links" style = "display:flex;justify-content: space-around;align-items: center;margin-right: 10px;margin-bottom: 8px; margin-top: 8px;">
-          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/material-sharp/24/000000/settings.png" width="25px"></a></li>
-          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/metro/26/000000/ask-question.png" width="25px"> </a></li>
-          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/ios-filled/50/000000/menu.png" width ="25px"> </a></li>
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/material-sharp/24/000000/settings.png" width="35px"></a></li>
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/metro/26/000000/ask-question.png" width="35px"> </a></li>
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/ios-filled/50/000000/menu.png" width ="35px"> </a></li>
           <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/doodle/48/000000/user.png" width="35px" > </a></li>
           <li> Daniel</li>
         </ul>
       </nav>
     </div>
   </div>
-  <hr style = "margin-top: 0px;width:81.6%;margin-left:18.4%;margin-bottom: 0px;height:1px;background-color:#747080">
+  <hr style = "margin-top: 0px;width:100%;margin-left:14%;margin-bottom: 0px;height:1px;background-color:#747080">
     <!--WHOLE CONTENT CONTAINER -->
   <div class = "Content" style="display:flex;">
 
@@ -178,24 +178,24 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
     <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
     
-      <div class = "Heading" style="display:block;height:12%;text-align: center;margin-bottom:0px;margin-right:10%">
+      <div class = "Heading" style="font-size:18px;display:block;height:12%;text-align:center;margin-bottom:0px;margin-right:10%">
         <ul style="letter-spacing:2px;display:flex;flex-direction: row;justify-content:space-evenly;list-style: none;">
-          <div class = "Heading-highlight" style="width:180px;height:30px;border-radius:18px;border:1px;background-color:#00FF71;text-align:inherit">
+          <div class = "Heading-highlight" style="width:180px;height:30px;border-radius:18px;border:1px;background-color:#00FF71;text-align:center">
           <span style = "line-height:30px; vertical-align: middle;">Project A3</span>
           </div>
           <li>Project A2</li>
           <li>Project A1</li>
         </ul>
-        <div class = "Horizontal-line" style="position:absolute;top:104px;width:46%;margin-left:10%;height:1px;background:#747080;"></div>
+        <div class = "Horizontal-line" style="position:absolute;top:110px;width:46%;margin-left:11.6%;height:1px;background:#747080;"></div>
         <div class = "sub-heading"; style="display:inline-block;">
-          <pre style ="margin-top:0px;font-weight: 300;letter-spacing:3px;">Report    <mark class = "web-class" id = "web-page">WebPage</mark>     Draft</pre>
+          <pre style ="margin-top:10px;font-weight: 300;letter-spacing:3px;">Report    <mark class = "web-class" id = "web-page">WebPage</mark>     Draft</pre>
         </div>
       </div>
 
       <div class = "Quick_Access" style="height:25%;text-align: left;">
-        <span style= "margin-left:15px;margin-top:10px;letter-spacing: 4px;color:#9E3636;">QUICK ACCESS</span>
+        <span style= "font-size:135%;margin-left:15px;margin-top:10px;letter-spacing: 4px;color:#9E3636;">QUICK ACCESS</span>
         <div class = "Quick_Access">
-          <div class = Quick_Access_Folders  style = "display:flex;flex-direction:row;list-style: none;margin-left:50px;margin-top:7px;">
+          <div class = Quick_Access_Folders  style = "display:flex;flex-direction:row;list-style: none;margin-left:50px;margin-top:20px;">
             <div class = "image_wrapper">
               <a class = "thumbnail" href="#">
               <span><img id = "previewed" src="Quick_Access_images/html.png"></span>
@@ -228,15 +228,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 
     <!-- FOLDERS CONTAINER -->
       <div class = "Folders_Container" style ="display:flex;flex-direction: column;height:450px;margin-top:20px;">
-        <span class="folder-label" style= "margin-left:15px;margin-top:10px;letter-spacing: 4px;color:#9E3636;">FOLDERS</span>
+        <span class="folder-label" style= "font-size:135%;margin-left:15px;margin-top:30px;letter-spacing: 4px;color:#9E3636;">FOLDERS</span>
           <div class="part1" style="margin-left:30px">
-            <div class="part1-header" style="margin-left: 120px;">
+            <div class="part1-header" style="margin-left: 30px;">
               <h3>Part 1: Home Page 
-                <span style="opacity: 0.3; margin-left: 150px"> Shared with Raymond, John and 2 others</span>
+                <span style="font-size:85%;opacity: 0.3; margin-left: 386px"> Shared with Raymond, John and 2 others</span>
                 <span><i class="w3-padding fa fa-pencil"></i></span>
                 <span><i class="fa fa-eye"></i></span>
                 <span style="padding-left: 20px; opacity: 0.3;"><i class="fa fa-trash"></i></span>
-                <hr style="margin-right: 250px; border: 0.1px solid violet"/>
+                <hr style="margin-top:3px;margin-right: 250px; border: 0.1px solid rgb(106, 106, 106)"/>
               </h3>
             </div>
             <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;">
@@ -247,13 +247,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
             </div>
           </div>
           <div class = "Part2" style ="margin-left:30px">
-            <div class="part2-header" style="margin-left: 120px">
+            <div class="part2-header" style="margin-left: 30px">
               <h3>Part 2: Share pop-up
-                <span style="opacity: 0.3; margin-left: 150px"> Shared with Raymond, John and 2 others</span>
+                <span style="font-size:85%;opacity: 0.3; margin-left: 370px"> Shared with Raymond, John and 2 others</span>
                 <span style="opacity: 0.3;"><i class="w3-padding fa fa-pencil"></i></span>
                 <span><i class="fa fa-eye"></i></span>
                 <span style="padding-left: 20px; opacity: 0.3;"><i class="fa fa-trash"></i></span>
-                <hr style="margin-right: 250px; border: 0.1px solid violet"/>
+                <hr style="margin-top:3px;margin-right: 250px; border: 0.1px solid rgb(106, 106, 106)">
               </h3>
             </div>
             <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;">
@@ -265,33 +265,29 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
         </div>
       </div>
     <!-- PROGRESS CONTAINER -->
-    <div class = "Progress-content" style= "height:92vh; width:15%;background-color:none ; text-align: center; font-size: 18px">PROGRESS BAR
-	<p style = "white-space: nowrap;position: relative; top : 0px; left: 0px; font-size: 16px"> TO-DO </p>
+    <div class = "Progress-content" style= "margin-left:-60px;padding:0px;margin-top:5%;height:92vh; width:15%;background-color:none ; font-size: 20px">
+      <p style = "white-space: nowrap;position:relative;top:15px; left: 0px; font-size: 22px;text-align: center;"> TO-DO </p>
+      <hr style = "border:solid 0.5px rgb(174, 0, 255);margin:auto;width:40%;background-color: rgb(174, 0, 255);">
+      
+      <ul style ="padding:0px;">
+        <li style = "font-size:18px; list-style: none">HTML - 50%</li> 
+        <input style = "width:200px" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo"  value="Bike"> Redesign Landing Page</li>
+        <br>
+        <li style = "font-size:18px; list-style: none">JAVA - 30%</li> 
+        <input style = "width:200px" type="range" min="1" max="100" value="30" class="slider" id="myRange">
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)""> <input type="checkbox" id="html" name="todo"  value="Bike"> Optimise A3()</li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)""> <input type="checkbox" id="html" name="todo" checked  value="Bike"> Create function A3()</li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)""> <input type="checkbox" id="html" name="todo"   value="Bike"> Create function A2()</li>
+        <br>
+        <li style = "font-size:18px; list-style: none">CSS - 90%</li> 
+        <input style = "width:200px" type="range" min="1" max="100" value="90" class="slider" id="myRange">
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)""> <input type="checkbox" id="html" name="todo"  checked value="Bike"> Change border width </li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)""> <input type="checkbox" id="html" name="todo" checked  value="Bike"> Make flexbox</li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)""> <input type="checkbox" id="html" name="todo"   value="Bike"> Change font</li>
+      </ul>
 	
-	<ul style = "white-space: nowrap;position: relative; top : 1%; left: -5%;">
-	  <li style = "font-size:16px; list-style: none">HTML - 50%</li> 
-	  
-	  <input style = "width:200px" type="range" min="1" max="100" value="50" class="slider" id="myRange">
-	<li style = "list-style: none"> <input type="checkbox" id="html" name="todo"  value="Bike"> Redesign Landing Page</li>
-	
-	<br>
-	
-	<li style = "font-size:16px; list-style: none">JAVA - 30%</li> 
-	<input style = "width:200px" type="range" min="1" max="100" value="30" class="slider" id="myRange">
-	<li style = "list-style: none"> <input type="checkbox" id="html" name="todo"  value="Bike"> Optimise A3()</li>
-	<li style = "list-style: none"> <input type="checkbox" id="html" name="todo" checked  value="Bike"> Create function A3()</li>
-	<li style = "list-style: none"> <input type="checkbox" id="html" name="todo"   value="Bike"> Create function A2()</li>
-	<br>
-	<li style = "font-size:16px; list-style: none">CSS - 90%</li> 
-	<input style = "width:200px" type="range" min="1" max="100" value="90" class="slider" id="myRange">
-	<li style = "list-style: none"> <input type="checkbox" id="html" name="todo"  checked value="Bike"> Change border width </li>
-	<li style = "list-style: none"> <input type="checkbox" id="html" name="todo" checked  value="Bike"> Make flexbox</li>
-	<li style = "list-style: none"> <input type="checkbox" id="html" name="todo"   value="Bike"> Change font</li>
-	
-	</ul>
-	
-	</div>
-    </div>
+	  </div>
   </div>
 </div>
 
