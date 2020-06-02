@@ -70,7 +70,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
         <span style="font-size: 14px; margin-top:7px;margin-left:15px;margin-bottom:7px;"> Sharing Privilege: Owner</span>
         <div class = "image_wrapper" style = "margin-left:16%; width:100%;">
           <a class = "thumbnail" href="#">
-          <span><img id = "previewed" src="Quick_Access_images/html.png"></span>
+          <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
           <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
           </a>
           <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:0%;"> Hello.html</span>
@@ -93,7 +93,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
           <p style="margin-left:70%;margin-top:2px;margin-right:2px;color:#878F8F;font-size:14px;">
             Get shareable link <img src="https://img.icons8.com/material-sharp/24/000000/link.png"/>
           </p>
-          <div class ="Name-highlight" style="font-size:17px;width:90px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);text-align: center;">
+          <div class ="Name-highlight1" style="font-size:17px;width:90px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);text-align: center;">
             <span style = "line-height:30px; vertical-align: middle;"><pre>  People      <span style="color:black">Groups</span></pre></span>
           </div>
         </div>
@@ -188,7 +188,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
         </ul>
         <div class = "Horizontal-line" style="position:absolute;top:110px;width:46%;margin-left:11.6%;height:1px;background:#747080;"></div>
         <div class = "sub-heading"; style="display:inline-block;">
-          <pre style ="margin-top:10px;font-weight: 300;letter-spacing:3px;">Report    <mark class = "web-class" id = "web-page">WebPage</mark>     Draft</pre>
+          <pre style ="margin-top:10px;font-weight: 300;letter-spacing:3px;"><a id="report" onclick="changeScreen(this.id)">Report</a>    <a  id = "web-page" class = "web-class" onclick="changeScreen(this.id)">WebPage</a>     Draft</pre>
         </div>
       </div>
 
@@ -198,28 +198,28 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
           <div class = Quick_Access_Folders  style = "display:flex;flex-direction:row;list-style: none;margin-left:50px;margin-top:20px;">
             <div class = "image_wrapper">
               <a class = "thumbnail" href="#">
-              <span><img id = "previewed" src="Quick_Access_images/html.png"></span>
+              <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
               <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
               </a>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:0.7%;"> Hello.html</span>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span  class="caption" style = "margin-top:0.7%;"> Hello.html</span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 21/04/2020</p>
             </div>
             <div class = "image_wrapper">
               <a class = "thumbnail" href="#">
-                <span><img id = "previewed" src="Quick_Access_images/html.png"></span>
+                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
                 <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
                 </a>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:0.7%;"> Hello.html </span>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption" style = "margin-top:0.7%;"> Hello.html </span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 20/04/2020</p>
             </div>
             <div class = "image_wrapper">
               <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:0.7%;"> Hello.html </span>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 19/04/2020</p>
             </div>
             <div class = "image_wrapper">
               <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:0.7%;"> Hello.html </span>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 18/04/2020</p>
             </div>
           </div>
@@ -242,7 +242,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
             <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;">
               
               <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px">
-              <p style="margin-top: 50px; margin-left: 80px;">Hello.html</p>
+              <p  class="caption" style="margin-top: 50px; margin-left: 80px;">Hello.html</p>
               <p style="margin-top: 70px; margin-left: 40px">last modified: 21/04/2020</p>
             </div>
           </div>
@@ -258,7 +258,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
             </div>
             <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;">
               <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px">
-              <p style="margin-top: 50px; margin-left: 80px;">Hello.html</p>
+              <p  class="caption" style="margin-top: 50px; margin-left: 80px;">Hello.html</p>
               <p style="margin-top: 70px; margin-left: 40px">last modified: 21/04/2020</p>
             </div>
           </div>
@@ -313,8 +313,57 @@ function close_pop(){
   document.getElementById("yes-button").innerHTML = "Yes";
 }
 
-function showReport() {
-  document.getElementById("web-page")
+function changeScreen(id) {
+  var x = document.getElementById("report");
+  var y = document.getElementById("web-page");
+  var images = document.getElementsByClassName("Quick_Access_Folder");
+  var previews = document.getElementsByClassName("previewed")
+  var captions = document.getElementsByClassName("caption");
+  
+  if (id === "report") {
+    x.className = "web-class";
+    y.className = "";
+    
+    x.style.color = "white"
+    y.style.color = "black";
+    y.style.backgroundColor = "";
+
+    for (var i = 0; i < images.length; i+= 1) {
+      images[i].src = "Quick_Access_images/report.png";
+    }
+
+    for (var i = 0; i < previews.length; i+= 1) {
+      previews[i].src = "Quick_Access_images/report.png";
+    }
+
+    for (var i = 0; i < captions.length; i+= 1) {
+      captions[i].innerHTML = "Report.docx";
+    }
+     
+  }
+
+  else if (id === "web-page") {
+    y.className = "web-class";
+    x.className = "";
+
+    y.style.color = "white"
+    x.style.color = "black";
+    x.style.backgroundColor = "";
+
+    for (var i = 0; i < images.length; i+= 1) {
+      images[i].src = "Quick_Access_images/html.png";
+    }
+
+    for (var i = 0; i < previews.length; i+= 1) {
+      previews[i].src = "Quick_Access_images/report.png";
+    }
+
+    for (var i = 0; i < captions.length; i+= 1) {
+      captions[i].innerHTML = "Hello.html";
+    }
+     
+  }
+  
 
 }
 function myFunc(id) {

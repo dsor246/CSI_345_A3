@@ -195,7 +195,7 @@ html {
     background-color: rgb(206, 10, 10);
     color: white;
 }
-.thumbnail #previewed{
+.thumbnail .previewed{
     width:400px;
     position:absolute;
     z-index:50;
@@ -208,7 +208,7 @@ html {
     overflow-y: auto;
     visibility:hidden;
 }
-.thumbnail:hover #previewed{
+.thumbnail:hover .previewed{
     visibility:visible
 }
 
