@@ -223,6 +223,15 @@ html {
     border-radius:50px;
 }
 
+.Name-highlight1 {
+    margin-top:9px;
+    margin-left:152px;    
+    width:62px;
+    height:30px;
+    border-radius:18px;
+    border:1px;
+    background-color:rgb(255, 255, 255);
+}
 
 ul, #myUL {
     list-style-type: none;
@@ -255,4 +264,8 @@ ul, #myUL {
 /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
 .active {
     display: block;
+}
+
+.w3-container img {
+    margin:10px;
 }
