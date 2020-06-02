@@ -93,23 +93,25 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
           <p style="margin-left:70%;margin-top:2px;margin-right:2px;color:#878F8F;font-size:14px;">
             Get shareable link <img src="https://img.icons8.com/material-sharp/24/000000/link.png"/>
           </p>
-          <div class ="Name-highlight1" style="font-size:17px;width:90px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);text-align: center;">
+          <div class ="Name-highlight" style="font-size:17px;width:90px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);text-align: center;">
             <span style = "line-height:30px; vertical-align: middle;"><pre>  People      <span style="color:black">Groups</span></pre></span>
           </div>
         </div>
         <div class = "Bar" style = "border-radius:5px;margin-left:0px;margin-top:8px;width:94%;height:25px;border:1px solid #000;">
           <span style="margin-left:7px;font-size:13.7px;opacity: 0.2;color:black;font-weight:lighter;">Enter names or email addresses</span>
-          <img style = "margin-left:43%;width:5%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
+          <img style = "margin-left:42%;width:5%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
           <img style = "width:5%;" src="https://img.icons8.com/material/24/000000/give-way.png"/>
         </div>
         
         <div class ="Names" style="position:relative" >
-          <div class = "Names" style = "font-size:17px;position:absolute;top:0px;left:0px;line-height:15px; vertical-align: middle;"><pre><span style="color:black">  New    Alex</span>    Ricky    <span style="color:black">Jack</span></pre></div>
+          <div class = "Names" style = "font-size:17px;position:absolute;top:0px;left:0px;line-height:15px; vertical-align: middle;">
+            <pre id = "Names"><span id="name" style="color:black">  <a onmouseover = "changeName(this.id)" id = "new">New</a>    <a onmouseover = "changeName(this.id)" id = "alex">Alex</a></span>    <a class = "web-class" onmouseover = "changeName(this.id)" id = "ricky">Ricky</a>    <a onmouseover = "changeName(this.id)" id = "jack" style="color:black">Jack</a></pre>
+          </div>
         </div>
-        <div class = "Name-highlight" style="margin-top:9px;margin-left:152px;width:62px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);"></div>
+        <div class = "Name-highlight1"></div>
 
         <div class = "text-box" style = "margin-top:15px;width:94%;height:45%;border:1px solid rgba(114, 113, 113, 0.795);border-radius:4px;">
-          <span style="color:#000;font-size:14px;margin-left:9px;padding-top:20px;"> Hey Ricky, its me Daniel...</span>
+          <span id = "text-box" style="color:#000;font-size:14px;margin-left:9px;padding-top:20px;"> Hey Ricky, its me Daniel...</span>
         </div>
         
         <div class = "buttons" style="position:relative;margin-top:7%;margin-left:0%;">
@@ -136,7 +138,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
       <div class = "privileges" style="display:inline-block">
         <p><pre>Privileges: <img style="opacity:0.3;" src="https://img.icons8.com/material-sharp/22/000000/edit.png"> <img src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/> <img style= "opacity:0.3;" src="https://img.icons8.com/ios-glyphs/22/000000/trash--v1.png"/></p></pre>
         <input type="checkbox" checked="checked" id="notify" name="notify">
-        <label style="padding-left: 7px;">  Notify everyone</label>
+        <label style="padding-left: 7px;">Notify everyone</label>
         <br>
         <pre style = "margin-top:12%;"><button class="yes-button" onclick="change();"><span id="yes-button">Yes</span></button>    <button class="cancel-button"  onclick = "close_pop()" type="button"><span id="cancel-button">Cancel</span></button></pre>
       </div>
@@ -311,6 +313,33 @@ function close_share(){
 function close_pop(){
   document.getElementById("confID").style.display = "none";
   document.getElementById("yes-button").innerHTML = "Yes";
+}
+
+var textbox = document.getElementById("text-box");
+var ricky = document.getElementById("ricky");
+var alex = document.getElementById("alex");
+
+function changeName(id) {
+
+  if (id === "alex") {
+    textbox.innerHTML = "Hey Alex, how we doing? just a heads up..."
+    textbox.style.color = "black"
+    alex.className = "web-class"
+    ricky.className = ""
+    alex.style.color = "white";
+    ricky.style.color = "black";
+
+  }
+  if (id === "ricky") {
+    textbox.innerHTML = "Hey Ricky, its me Daniel...";
+    textbox.style.color = "black";
+    ricky.style.color = "white";
+    ricky.className = "web-class";
+    alex.className = "";
+    alex.style.color = "black";
+
+  }
+
 }
 
 function changeScreen(id) {
