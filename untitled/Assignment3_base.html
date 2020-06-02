@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Assignment 3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href = "style.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; cursor:default;}
+.w3-bar-block .w3-bar-item {padding: 16px}
+</style>
+<body>
+
+<!-- Side Navigation -->
+<nav class="style-3 scrollbar force-overflow w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:280px;overflow:display;" id="mySidebar">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large">
+    <div>
+      <img src="./title.png" style="width:80%;">
+    </div></a>
+  <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu"
+  class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">Project A3 <i class="w3-padding fa fa-pencil"></i></a>
+  <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Files (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
+  <div id="Demo1" class="w3-hide w3-animate-left">
+    <!-- Tree view -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="doShare('File2');w3_close();">
+      <ul id="myUL">
+        <li><span class="caret">
+          <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./fileIcon3.png" style="width:10%;"><span class="w3-opacity w3-large">src</span>
+            </div>
+          <ul class="nested">
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.css</span>
+            </div>
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.js</span>
+            </div>
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.html</span>
+            </div>
+          </ul>
+        </span></li>
+      </ul>
+      <ul id="myUL">
+        <li><span class="caret">
+          <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./fileIcon3.png" style="width:10%;"><span class="w3-opacity w3-large">public</span>
+            </div>
+          <ul class="nested">
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.css</span>
+            </div>
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.js</span>
+            </div>
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.html</span>
+            </div>
+          </ul>
+        </span></li>
+      </ul>
+      <ul id="myUL">
+        <li><span class="caret">
+          <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./fileIcon3.png" style="width:10%;"><span class="w3-opacity w3-large">Part 1</span>
+            </div>
+          <ul class="nested">
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.css</span>
+            </div>
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.js</span>
+            </div>
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.html</span>
+            </div>
+          </ul>
+        </span></li>
+      </ul>
+      <ul id="myUL">
+        <li><span class="caret">
+          <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./fileIcon3.png" style="width:10%;"><span class="w3-opacity w3-large">Part 2</span>
+            </div>
+          <ul class="nested">
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.css</span>
+            </div>
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.js</span>
+            </div>
+            <div class="w3-container">
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:12%;"><span class="w3-opacity w3-large">Hello.html</span>
+            </div>
+          </ul>
+        </span></li>
+      </ul>
+    </a>
+  </div>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-paper-plane w3-margin-right"></i>Shared Files</a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-hourglass-end w3-margin-right"></i>Draft Files</a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash w3-margin-right"></i>Trash</a>
+</nav>
+
+<!-- Modal that pops up when you click on "Share File" -->
+<div id="id01" class="w3-modal" style="z-index:4;margin:0px;">
+  <div class="w3-modal-content w3-animate-zoom" style="border-radius:20px;width:40%;height:50vh">
+    <div class="heading" style = "text-align: center;background-color:#EF2230;border-radius:20px;height:8%">
+       <span onclick="document.getElementById('id01').style.display='none'"
+       class="w3-button w3-right" style="background: url(https://img.icons8.com/material-sharp/30/000000/cancel.png);height:29px;width:20px;">
+      </span>
+      <h2 style="color:white; font-size: 23px;">Share File: Hello.html</h2>
+    </div>
+
+    <div class="Share-container" style="display:flex;width:100%;height:100%;padding-bottom:70px;">
+      
+      <div class = "left-container" style="overflow:hidden;display:flex;flex:1.1;flex-direction:column;height:100%;">
+        <span style="font-size: 14px; margin-top:7px;margin-left:15px;margin-bottom:7px;"> Sharing Privilege: Owner</span>
+        <div class = "image_wrapper" style = "margin-left:16%; width:100%;">
+          <a class = "thumbnail" href="#">
+          <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+          <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+          </a>
+          <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span style = "margin-top:0%;"> Hello.html</span>
+          <p style = "margin-top:10%;margin-left:5%;">last modified: 21/04/2020</p>
+        </div>
+        
+        <span style = "margin-left:10%;height:5%;width:90%;margin-top:15%;font-size:120%;color:rgb(120, 120, 120);font-weight:bold">Shared with Raymond, John and 2 others</span>
+        
+        <div class = "radiobutton-wrapper" style="width:90%;flex:0.5;font-family: 'Quicksand', sans-serif;margin-top:19%;margin-left:22%;font-size:19px;">
+          <li style = "list-style: none"> <input type="checkbox" id="html" name="todo"  checked value="Bike"> Notify everyone</li>
+          <li style = "list-style: none"> <input type="checkbox" id="html" name="todo" checked  value="Bike"> Share a copy</li>
+          <li style = "list-style: none"> <input type="checkbox" id="html" name="todo"   value="Bike"> Add a note</li>
+          </form>
+        </div>
+          
+      </div>
+      
+      <div class = "right-container" style="flex:2;height:100%;color:rgb(255, 255, 255);font-weight:bold">
+        <div class = "container" style="font-size:0;">
+          <p style="margin-left:70%;margin-top:2px;margin-right:2px;color:#878F8F;font-size:14px;">
+            Get shareable link <img src="https://img.icons8.com/material-sharp/24/000000/link.png"/>
+          </p>
+          <div class ="Name-highlight1" style="font-size:17px;width:90px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);text-align: center;">
+            <span style = "line-height:30px; vertical-align: middle;"><pre>  People      <span style="color:black">Groups</span></pre></span>
+          </div>
+        </div>
+        <div class = "Bar" style = "border-radius:5px;margin-left:0px;margin-top:8px;width:94%;height:25px;border:1px solid #000;">
+          <span style="margin-left:7px;font-size:13.7px;opacity: 0.2;color:black;font-weight:lighter;">Enter names or email addresses</span>
+          <img style = "margin-left:43%;width:5%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
+          <img style = "width:5%;" src="https://img.icons8.com/material/24/000000/give-way.png"/>
+        </div>
+        
+        <div class ="Names" style="position:relative" >
+          <div class = "Names" style = "font-size:17px;position:absolute;top:0px;left:0px;line-height:15px; vertical-align: middle;"><pre><span style="color:black">  New    Alex</span>    Ricky    <span style="color:black">Jack</span></pre></div>
+        </div>
+        <div class = "Name-highlight" style="margin-top:9px;margin-left:152px;width:62px;height:30px;border-radius:18px;border:1px;background-color:rgb(0, 131, 253);"></div>
+
+        <div class = "text-box" style = "margin-top:15px;width:94%;height:45%;border:1px solid rgba(114, 113, 113, 0.795);border-radius:4px;">
+          <span style="color:#000;font-size:14px;margin-left:9px;padding-top:20px;"> Hey Ricky, its me Daniel...</span>
+        </div>
+        
+        <div class = "buttons" style="position:relative;margin-top:7%;margin-left:0%;">
+          <button class="button1"  onclick= "document.getElementById('confID').style.display = 'block'">        
+            <span id="button1" style = "font-size:13px">Send</span>
+          </button>
+          <button class="button2">
+            <span id="button2" onclick="close_share();" style = "font-size:13px">Cancel</span>
+          </button>
+          <span style="color:rgba(112, 107, 107, 0.932);position:absolute;font-size:14px;left:85%;top:70%;">Advanced</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  Confirmation that pops up when you click Send -->
+<div id="confID" class = "w3-modal" style="z-index:4;margin:0px;font-size:18px;">
+  <div class="w3-modal-content w3-animate-zoom" style="margin-top:120px;border:2px solid green;border-radius:6px;width:20%;height:23vh;font-family: 'Karla', sans-serif;">
+    <div class = "pop-content" style ="text-align: center;padding-top:3px;">
+      <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
+      <heading style="font-size:16px;">Share file <span style ="color:darkmagenta">Hello.html</span> to <span style="color:orangered">Ricky?</span></heading>
+      <hr style="height:1px;margin-top:2px;width:80%;margin:auto;background-color:crimson;"></hr>
+      <div class = "privileges" style="display:inline-block">
+        <p><pre>Privileges: <img style="opacity:0.3;" src="https://img.icons8.com/material-sharp/22/000000/edit.png"> <img src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/> <img style= "opacity:0.3;" src="https://img.icons8.com/ios-glyphs/22/000000/trash--v1.png"/></p></pre>
+        <input type="checkbox" checked="checked" id="notify" name="notify">
+        <label style="padding-left: 7px;">  Notify everyone</label>
+        <br>
+        <pre style = "margin-top:12%;"><button class="yes-button" onclick="change();"><span id="yes-button">Yes</span></button>    <button class="cancel-button"  onclick = "close_pop()" type="button"><span id="cancel-button">Cancel</span></button></pre>
+      </div>
+    </div>
+</div>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
+</div>
+<!-- CONTAINER FOR WHOLE PAGE -->
+
+<div class ="Container scrollbar1 style-2" style="font-family: 'Quicksand', sans-serif;overflow-x:hidden;">
+  <!-- TOPBAR CONTAINER -->
+  <div class = "TopBar" style = "display:flex; height:10;margin-left:280px;">
+    <div class = "SearchBar" style = "flex:1;">
+      <div class = "Bar" style = "border-radius:5px;margin-left:30px;margin-top:12px;width:50%;height:30px;border:1px solid #000">
+        <img src="https://img.icons8.com/ios/64/000000/search--v1.png" style="width:20px;margin-top:-8px; margin-left:5px;"/>
+        
+        <span style="opacity: 0.3;font-size:20px;">Search in Project A3</span>
+      </div>
+    </div>
+    <div class = "link-content">
+      <nav>
+        <ul class = "nav-links" style = "display:flex;justify-content: space-around;align-items: center;margin-right: 10px;margin-bottom: 8px; margin-top: 8px;">
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/material-sharp/24/000000/settings.png" width="35px"></a></li>
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/metro/26/000000/ask-question.png" width="35px"> </a></li>
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/ios-filled/50/000000/menu.png" width ="35px"> </a></li>
+          <li> <a class = "nav-link" href = "#"><img src="https://img.icons8.com/doodle/48/000000/user.png" width="35px" > </a></li>
+          <li> Daniel</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <hr style = "margin-top: 0px;width:100%;margin-left:14%;margin-bottom: 0px;height:1px;background-color:#747080">
+    <!--WHOLE CONTENT CONTAINER -->
+  <div class = "Content" style="display:flex;">
+
+    <div class="w3-main" style="margin-left:280px;height:92vh;width:75%;">
+    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
+    <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+    
+      <div class = "Heading" style="font-size:18px;display:block;height:12%;text-align:center;margin-bottom:0px;margin-right:10%">
+        <ul style="letter-spacing:2px;display:flex;flex-direction: row;justify-content:space-evenly;list-style: none;">
+          <div class = "Heading-highlight" style="width:180px;height:30px;border-radius:18px;border:1px;background-color:#00FF71;text-align:center">
+          <span style = "line-height:30px; vertical-align: middle;">Project A3</span>
+          </div>
+          <li>Project A2</li>
+          <li>Project A1</li>
+        </ul>
+        <div class = "Horizontal-line" style="position:absolute;top:110px;width:46%;margin-left:11.6%;height:1px;background:#747080;"></div>
+        <div class = "sub-heading"; style="display:inline-block;">
+          <pre style ="margin-top:10px;font-weight: 300;letter-spacing:3px;"><a style="cursor:pointer"id="report" onclick="changeScreen(this.id)">Report</a>    <a  style="cursor:pointer" id = "web-page" class = "web-class" onclick="changeScreen(this.id)">WebPage</a>     Draft</pre>
+        </div>
+      </div>
+
+      <div class = "Quick_Access" style="height:25%;text-align: left;">
+        <span style= "font-size:135%;margin-left:15px;margin-top:10px;letter-spacing: 4px;color:#9E3636;">QUICK ACCESS</span>
+        <div class = "Quick_Access">
+          <div class = Quick_Access_Folders  style = "display:flex;flex-direction:row;list-style: none;margin-left:50px;margin-top:20px;">
+            <div class = "image_wrapper">
+              <a class = "thumbnail" href="#">
+              <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+              <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+              </a>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span  class="caption" style = "margin-top:0.7%;"> Hello.html</span>
+              <p style = "margin-top:17%;margin-left:7%;">last modified: 21/04/2020</p>
+            </div>
+            <div class = "image_wrapper">
+              <a class = "thumbnail" href="#">
+                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+                <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+                </a>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption" style = "margin-top:0.7%;"> Hello.html </span>
+              <p style = "margin-top:17%;margin-left:7%;">last modified: 20/04/2020</p>
+            </div>
+            <div class = "image_wrapper">
+              <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
+              <p style = "margin-top:17%;margin-left:7%;">last modified: 19/04/2020</p>
+            </div>
+            <div class = "image_wrapper">
+              <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
+              <p style = "margin-top:17%;margin-left:7%;">last modified: 18/04/2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- FOLDERS CONTAINER -->
+      <div class = "Folders_Container" style ="display:flex;flex-direction: column;height:450px;margin-top:20px;">
+        <span class="folder-label" style= "font-size:135%;margin-left:15px;margin-top:30px;letter-spacing: 4px;color:#9E3636;">FOLDERS</span>
+          <div class="part1" style="margin-left:30px">
+            <div class="part1-header" style="margin-left: 30px;">
+              <h3>Part 1: Home Page 
+                <span style="font-size:85%;opacity: 0.3; margin-left: 386px"> Shared with Raymond, John and 2 others</span>
+                <span><i class="w3-padding fa fa-pencil"></i></span>
+                <span><i class="fa fa-eye"></i></span>
+                <span style="padding-left: 20px; opacity: 0.3;"><i class="fa fa-trash"></i></span>
+                <hr style="margin-top:3px;margin-right: 250px; border: 0.1px solid rgb(106, 106, 106)"/>
+              </h3>
+            </div>
+            <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;">
+              
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px">
+              <p  class="caption" style="margin-top: 50px; margin-left: 80px;">Hello.html</p>
+              <p style="margin-top: 70px; margin-left: 40px">last modified: 21/04/2020</p>
+            </div>
+          </div>
+          <div class = "Part2" style ="margin-left:30px">
+            <div class="part2-header" style="margin-left: 30px">
+              <h3>Part 2: Share pop-up
+                <span style="font-size:85%;opacity: 0.3; margin-left: 370px"> Shared with Raymond, John and 2 others</span>
+                <span style="opacity: 0.3;"><i class="w3-padding fa fa-pencil"></i></span>
+                <span><i class="fa fa-eye"></i></span>
+                <span style="padding-left: 20px; opacity: 0.3;"><i class="fa fa-trash"></i></span>
+                <hr style="margin-top:3px;margin-right: 250px; border: 0.1px solid rgb(106, 106, 106)">
+              </h3>
+            </div>
+            <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;">
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px">
+              <p  class="caption" style="margin-top: 50px; margin-left: 80px;">Hello.html</p>
+              <p style="margin-top: 70px; margin-left: 40px">last modified: 21/04/2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- PROGRESS CONTAINER -->
+    <div class = "Progress-content" style= "margin-left:-60px;padding:0px;margin-top:5%;height:92vh; width:15%;background-color:none ; font-size: 20px">
+      <p style = "white-space: nowrap;position:relative;top:15px; left: 0px; font-size: 22px;text-align: center;"> TO-DO </p>
+      <hr style = "border:solid 0.5px rgb(174, 0, 255);margin:auto;width:40%;background-color: rgb(174, 0, 255);">
+      
+      <ul style ="padding:0px;">
+        <li style = "font-size:18px; list-style: none">HTML - 50%</li> 
+        <input style = "width:200px" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo"> Redesign Landing Page</li>
+        <br>
+        <li style = "font-size:18px; list-style: none">JAVA - 30%</li> 
+        <input style = "width:200px" type="range" min="1" max="100" value="30" class="slider" id="myRange">
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo"  value="Bike"> Optimise A3()</li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo" checked  value="Bike"> Create function A3()</li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo"   value="Bike"> Create function A2()</li>
+        <br>
+        <li style = "font-size:18px; list-style: none">CSS - 90%</li> 
+        <input style = "width:200px" type="range" min="1" max="100" value="90" class="slider" id="myRange">
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" checked name="todo"> Change border width </li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" checked name="todo"> Make flexbox</li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo"> Change font</li>
+      </ul>
+	
+	  </div>
+  </div>
+</div>
+
+
+<script>
+myFunc('Demo1')
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function close_share(){
+  document.getElementById("id01").style.display = "none";
+}
+
+function close_pop(){
+  document.getElementById("confID").style.display = "none";
+  document.getElementById("yes-button").innerHTML = "Yes";
+}
+
+function changeScreen(id) {
+  var x = document.getElementById("report");
+  var y = document.getElementById("web-page");
+  var images = document.getElementsByClassName("Quick_Access_Folder");
+  var previews = document.getElementsByClassName("previewed")
+  var captions = document.getElementsByClassName("caption");
+  
+  if (id === "report") {
+    x.className = "web-class";
+    y.className = "";
+    
+    x.style.color = "white"
+    y.style.color = "black";
+    y.style.backgroundColor = "";
+
+    for (var i = 0; i < images.length; i+= 1) {
+      images[i].src = "Quick_Access_images/report.png";
+    }
+
+    for (var i = 0; i < previews.length; i+= 1) {
+      previews[i].src = "Quick_Access_images/report.png";
+    }
+
+    for (var i = 0; i < captions.length; i+= 1) {
+      captions[i].innerHTML = "Report.docx";
+    }
+     
+  }
+
+  else if (id === "web-page") {
+    y.className = "web-class";
+    x.className = "";
+
+    y.style.color = "white"
+    x.style.color = "black";
+    x.style.backgroundColor = "";
+
+    for (var i = 0; i < images.length; i+= 1) {
+      images[i].src = "Quick_Access_images/html.png";
+    }
+
+    for (var i = 0; i < previews.length; i+= 1) {
+      previews[i].src = "Quick_Access_images/html.png";
+    }
+
+    for (var i = 0; i < captions.length; i+= 1) {
+      captions[i].innerHTML = "Hello.html";
+    }
+     
+  }
+  
+
+}
+function myFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show"; 
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+var iter = 0;
+function change() {
+  var x = document.getElementById("yes-button")
+  var y = document.getElementById("cancel-button")
+
+  if (iter <=4) {
+    var messages = ["Sending", "Sending.", "Sending..", "Sending...","Message Sent"];
+    x.innerHTML = messages[iter%messages.length];
+  }
+  if(iter===4) {
+    y.innerHTML = "Undo";
+  }
+  if (iter===7) {
+    y.innerHTML = "Close"
+    y.style.color = "red"
+    return;
+  }
+  iter++;
+  setTimeout(change,1000)
+
+}
+function doShare(fileName) {
+  var i;
+  var x = document.getElementsByClassName("file");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x = document.getElementsByClassName("test");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" w3-light-grey", "");
+  }
+  document.getElementById(fileName).style.display = "block";
+  event.currentTarget.className += " w3-light-grey";
+}
+</script>
+
+<script>
+var openTab = document.getElementById("firstTab");
+openTab.click();
+</script>
+
+
+
+
+<script>
+
+  var toggler = document.getElementsByClassName("caret");
+  var i;
+
+  for (i = 0; i < toggler.length; i++) {
+    toggler[i].addEventListener("click", function() {
+      this.parentElement.querySelector(".nested").classList.toggle("active");
+      this.classList.toggle("caret-down");
+    });
+  }
+</script>
+
+</body>
+</html> 
+
