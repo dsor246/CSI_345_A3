@@ -1,0 +1,258 @@
+html {
+    zoom:100%;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.scrollbar {
+    position:absolute;
+    background-color: #F5F5F5;
+    float: left;
+    height: 100%;
+    margin-top: 0px;
+    width: 65px;
+    overflow-y: scroll;
+}
+
+.scrollbar1 {
+    position:absolute;
+    height: 100%;
+    width:100%;
+    overflow-y: scroll;
+    margin-top:0px;
+    float:left;
+
+}
+
+.force-overflow {
+    min-height: 600px;
+}
+
+.style-3::-webkit-scrollbar {
+	width: 7px;
+	background-color: #F5F5F5;
+}
+.style-3::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+	
+}
+
+.style-3::-webkit-scrollbar-thumb {
+    background-color: #D62929;
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	
+}
+.style-2::-webkit-scrollbar {
+	width: 13px;
+	background-color: #F5F5F5;
+}
+.style-2::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+	
+}
+
+.style-2::-webkit-scrollbar-thumb {
+    background-color: rgb(191, 192, 194);
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	
+}
+
+.Quick_Access_Folder {
+    width:70%;
+    border: 15px solid rgba(132, 146, 166, 0.144);
+    border-radius:10px;
+   
+}
+.image_wrapper {
+    position:relative;
+}
+.image_wrapper span{
+    position:absolute;
+    left:23%;
+    top:88%;
+    font-size:100%;
+    font-weight: lighter;
+    color: rgb(116, 109, 109);
+
+
+}
+.image_wrapper p{
+    position:absolute;
+    left:0%;
+    top:120px;
+    font-size:100%;
+    font-weight: lighter;
+    color: rgb(116, 109, 109);
+
+}
+
+.share-panel {
+    background-color: darkred;
+}
+
+.buttons {
+    left:0;
+    margin-top:16px;
+    margin-left:50px;
+    transition: 0.3s;
+}
+.button1{
+    background-color: white;
+    cursor:pointer;
+    width:120px;
+    height: 33px;
+    text-align:center;
+    color:rgb(0, 0, 0);
+    border:1px solid rgb(5, 218, 23);
+    text-decoration: none;
+    border-radius:4px;
+}
+
+.button2 {
+    background-color: white;
+    cursor:pointer;
+    width:120px;
+    height: 33px;
+    text-align:center;
+    margin-left:34px;
+    color:rgb(0, 0, 0);
+    border:1px solid rgb(185, 190, 186);
+    text-decoration: none;
+    border-radius:4px;
+}
+.button1:visited {
+    background-color: #4CAF50;
+
+}
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+  
+.button2:hover {
+    background-color: rgb(206, 10, 10);
+    color: white;
+}
+.yes-button:focus{
+    transition: 5s;
+    background-color: rgb(55, 0, 255);
+    color:white;
+    width:130px;
+
+}
+
+
+.yes-button {
+    background-color: white;
+    cursor:pointer;
+    width:100px;
+    text-align:center;
+    color:rgb(0, 0, 0);
+    border:1px solid rgb(5, 218, 23);
+    text-decoration: none;
+    border-radius:4px;
+}
+
+.yes-button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.yes-button:active{
+    background-color: rgb(247, 0, 0);
+}
+
+
+.cancel-button {
+    background-color: white;
+    cursor:pointer;
+    width:90px;
+    text-align:center;
+    margin-left:34px;
+    color:rgb(0, 0, 0);
+    border:1px solid rgb(185, 190, 186);
+    text-decoration: none;
+    border-radius:4px;
+}
+
+.cancel-button:hover {
+    background-color: rgb(206, 10, 10);
+    color: white;
+}
+.thumbnail .previewed{
+    width:400px;
+    position:absolute;
+    z-index:50;
+    top: -129px;
+    left: 140px;
+    border-width:3px;
+    border-style: solid;
+    border-color: rgb(234, 0, 255);
+    border-radius:5px;
+    overflow-y: auto;
+    visibility:hidden;
+}
+.thumbnail:hover .previewed{
+    visibility:visible
+}
+
+.web-class{
+    padding-left: 20px;
+    padding-right:20px;
+    color:white;
+    background-color: rgb(0, 149, 255);
+    border-width:7px;
+    border-style:solid;
+    border-color: rgb(0, 149, 255);
+    border-radius:50px;
+}
+
+
+ul, #myUL {
+    list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+}
+
+
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+    display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+    display: block;
+}
