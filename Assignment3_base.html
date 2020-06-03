@@ -90,7 +90,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
             </div>
           <ul class="nested">
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span onclick = "openDoc()" class="w3-opacity w3-large side-names">Hi.css</span>
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span onclick = "openDocum()" class="w3-opacity w3-large side-names">Hi.css</span>
             </div>
             <div class="w3-container">
               <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names">Bob.html</span>
@@ -272,7 +272,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
                 <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
                 <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
                 </a>
-              <img onclick="document.getElementById('id01').style.display='block'" class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
+              <img onclick="openDoc()" class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 19/04/2020</p>
             </div>
             <div class = "image_wrapper">
@@ -352,7 +352,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
                 <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
                 <img class = "preview-button" style = "width:19px;position:absolute;right:0%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
                 </a>
-              <img onclick= "openDoc()" class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px;">
+              <img onclick= "openDocum()" class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px;">
               <p  class="caption" style="margin-top: 50px; margin-left: 100px;">Hi.css</p>
               <p style="margin-top: 70px; margin-left: 40px">last modified: 21/04/2020</p>
             </div>
@@ -398,17 +398,20 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
-
+// Closes share function screen
 function close_share(){
   document.getElementById("id01").style.display = "none";
 }
 
+// Closes the confirmation pop-up
 function close_pop(){
   document.getElementById("confID").style.display = "none";
   document.getElementById("yes-button").innerHTML = "Yes";
   document.getElementById("cancel-button").innerHTML = "Cancel";
   
 }
+
+// Changes the main contents and side-bar contents of the screen when switching between WebPage and Report
 
 function changeScreen(id) {
   var x = document.getElementById("report");
@@ -451,8 +454,6 @@ function changeScreen(id) {
       sidenames[i].innerHTML = report_sidenames[i]
     }
 
-    
-     
   }
 
   else if (id === "web-page") {
@@ -481,6 +482,8 @@ function changeScreen(id) {
      
   }
 }
+
+// Changes the pre-defined set of messages for each user and changes the blue highlight
 
 var textbox = document.getElementById("text-box");
 var ricky = document.getElementById("ricky");
@@ -532,6 +535,8 @@ function myFunc(id) {
     x.previousElementSibling.className.replace(" w3-red", "");
   }
 }
+
+//An animation function for once the Send button is clicked
 var iter = 0;
 function change() {
   
@@ -553,10 +558,18 @@ function change() {
   setTimeout(change,1000)
 
 }
-function openDoc() {
+
+//Opens the share function for a document named docum.docx once clicked
+function openDocum() {
   document.getElementById('id01').style.display='block'
   document.getElementById('share-name').innerHTML = 'Share File: docum.docx'
 }
+
+function openDoc() {
+  document.getElementById('id01').style.display='block'
+  document.getElementById('share-name').innerHTML = 'Share File: Hello.html'
+}
+
 function doShare(fileName) {
   var i;
   var x = document.getElementsByClassName("file");
