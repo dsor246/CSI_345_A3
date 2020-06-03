@@ -42,7 +42,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
               <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.js</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.html</span>
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large" onclick="document.getElementById('id01').style.display='block'">Hello.html</span>
             </div>
           </ul>
         </span></li>
@@ -54,13 +54,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
             </div>
           <ul class="nested">
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.css</span>
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large">page-lay.css</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.js</span>
+              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large">master.js</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.html</span>
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large">index.html</span>
             </div>
           </ul>
         </span></li>
@@ -72,13 +72,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
             </div>
           <ul class="nested">
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.css</span>
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Daniel.css</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.js</span>
+              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Creep.js</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.html</span>
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Well.html</span>
             </div>
           </ul>
         </span></li>
@@ -90,13 +90,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
             </div>
           <ul class="nested">
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.css</span>
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hi.css</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.js</span>
+              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Common.js</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.html</span>
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Bob.html</span>
             </div>
           </ul>
         </span></li>
@@ -115,7 +115,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
        <span onclick="document.getElementById('id01').style.display='none'"
        class="w3-button w3-right" style="background: url(https://img.icons8.com/material-sharp/30/000000/cancel.png);height:29px;width:20px;">
       </span>
-      <h2 style="color:white; font-size: 23px;">Share File: Hello.html</h2>
+      <h2 id = "share-name" style="color:white; font-size: 23px;">Share File: Hello.html</h2>
     </div>
 
     <div class="Share-container" style="display:flex;width:100%;height:100%;padding-bottom:70px;">
@@ -152,9 +152,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
           </div>
         </div>
         <div class = "Bar" style = "border-radius:5px;margin-left:0px;margin-top:8px;width:94%;height:25px;border:1px solid #000;">
-          <span style="margin-left:7px;font-size:13.7px;opacity: 0.2;color:black;font-weight:lighter;">Enter names or email addresses</span>
-          <img style = "margin-left:43%;width:5%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
-          <img style = "width:5%;" src="https://img.icons8.com/material/24/000000/give-way.png"/>
+          <span id = "email" style="margin-left:7px;font-size:13.7px;opacity: 0.2;color:black;font-weight:lighter;">Enter names or email addresses</span>
+          <div class = "icons" style = "display:inline-block;position:absolute;left:90%">
+            <img style = "width:40%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
+            <img style = "width:40%;" src="https://img.icons8.com/material/24/000000/give-way.png"/>
+        </div>
         </div>
         
         <div class ="Names" style="position:relative" >
@@ -184,8 +186,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
 <div id="confID" class = "w3-modal" style="z-index:4;margin:0px;font-size:18px;">
   <div class="w3-modal-content w3-animate-zoom" style="margin-top:120px;border:2px solid green;border-radius:6px;width:20%;height:23vh;font-family: 'Karla', sans-serif;">
     <div class = "pop-content" style ="text-align: center;padding-top:3px;">
-      <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
-      <heading style="font-size:16px;">Share file <span style ="color:darkmagenta">Hello.html</span> to <span style="color:orangered">Ricky?</span></heading>
+      <span onclick="close_pop()"
+      class="w3-button w3-right" style="background: url(https://img.icons8.com/material-sharp/30/000000/cancel.png);height:29px;width:20px;">     
+      </span> 
+      <heading style="font-size:16px;">Share file <span style ="color:darkmagenta">Hello.html</span> to <span id="name-send" style="color:orangered">Ricky?</span></heading>
       <hr style="height:1px;margin-top:2px;width:80%;margin:auto;background-color:crimson;"></hr>
       <div class = "privileges" style="display:inline-block">
         <p><pre>Privileges: <img style="opacity:0.3;" src="https://img.icons8.com/material-sharp/22/000000/edit.png"> <img src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/> <img style= "opacity:0.3;" src="https://img.icons8.com/ios-glyphs/22/000000/trash--v1.png"/></p></pre>
@@ -255,7 +259,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
               <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
               <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
               </a>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span  class="caption" style = "margin-top:0.7%;"> Hello.html</span>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span  class="caption" style = "margin-top:0.7%;">Daniel.css</span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 21/04/2020</p>
             </div>
             <div class = "image_wrapper">
@@ -263,17 +267,23 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
                 <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
                 <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
                 </a>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption" style = "margin-top:0.7%;"> Hello.html </span>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption" style = "margin-top:0.7%;"> Well.html </span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 20/04/2020</p>
             </div>
             <div class = "image_wrapper">
-              <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
+              <a class = "thumbnail" href="#">
+                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+                <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+                </a>
+              <img onclick="document.getElementById('id01').style.display='block'" class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 19/04/2020</p>
             </div>
             <div class = "image_wrapper">
-              <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
-              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
+              <a class = "thumbnail" href="#">
+                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+                <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+                </a>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Creep.js </span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 18/04/2020</p>
             </div>
           </div>
@@ -293,11 +303,32 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
                 <hr style="margin-top:3px;margin-right: 250px; border: 0.1px solid rgb(106, 106, 106)"/>
               </h3>
             </div>
-            <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;">
-              
+            <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;display:inline-block;">
+              <a class = "thumbnail" href="#">
+                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+                <img class = "preview-button" style = "width:19px;position:absolute;right:0%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+                </a>
               <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px">
-              <p  class="caption" style="margin-top: 50px; margin-left: 80px;">Hello.html</p>
+              <p  class="caption" style="margin-top: 50px; margin-left: 80px;">Well.html</p>
               <p style="margin-top: 70px; margin-left: 40px">last modified: 21/04/2020</p>
+            </div>
+            <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;display:inline-block;">
+              <a class = "thumbnail" href="#">
+                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+                <img class = "preview-button" style = "width:19px;position:absolute;right:0%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+                </a>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px;">
+              <p  class="caption" style="margin-top: 50px; margin-left: 80px;">Daniel.css</p>
+              <p style="margin-top: 70px; margin-left: 40px">last modified: 20/04/2020</p>
+            </div>
+            <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;display:inline-block;">
+              <a class = "thumbnail" href="#">
+                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+                <img class = "preview-button" style = "width:19px;position:absolute;right:0%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+                </a>
+              <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px;">
+              <p  class="caption" style="margin-top: 50px; margin-left: 90px;">Creep.js</p>
+              <p style="margin-top: 70px; margin-left: 40px">last modified: 19/04/2020</p>
             </div>
           </div>
           <div class = "Part2" style ="margin-left:30px">
@@ -310,9 +341,22 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
                 <hr style="margin-top:3px;margin-right: 250px; border: 0.1px solid rgb(106, 106, 106)">
               </h3>
             </div>
-            <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;">
+            <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;display:inline-block;">
+              <a class = "thumbnail" href="#">
+                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+                <img class = "preview-button" style = "width:19px;position:absolute;right:0%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+                </a>
               <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px">
-              <p  class="caption" style="margin-top: 50px; margin-left: 80px;">Hello.html</p>
+              <p  class="caption" style="margin-top: 50px; margin-left: 80px;">Bob.html</p>
+              <p style="margin-top: 70px; margin-left: 40px">last modified: 21/04/2020</p>
+            </div>
+            <div class = "image_wrapper" style="margin-bottom: 50px; margin-left: 30px;display:inline-block;">
+              <a class = "thumbnail" href="#">
+                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+                <img class = "preview-button" style = "width:19px;position:absolute;right:0%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
+                </a>
+              <img onclick= "openDoc()" class = "Quick_Access_Folder" src="Quick_Access_images/html.png" style="width:260px;">
+              <p  class="caption" style="margin-top: 50px; margin-left: 100px;">Hi.css</p>
               <p style="margin-top: 70px; margin-left: 40px">last modified: 21/04/2020</p>
             </div>
           </div>
@@ -365,6 +409,8 @@ function close_share(){
 function close_pop(){
   document.getElementById("confID").style.display = "none";
   document.getElementById("yes-button").innerHTML = "Yes";
+  document.getElementById("cancel-button").innerHTML = "Cancel";
+  
 }
 
 function changeScreen(id) {
@@ -374,6 +420,12 @@ function changeScreen(id) {
   var previews = document.getElementsByClassName("previewed")
   var captions = document.getElementsByClassName("caption");
   
+  var web_filenames = ["Daniel.css", "Well.html", "Hello.html", "Creep.js", 
+  "Well.html", "Daniel.css", "Creep.js", "Bob.html", "Hi.css"]
+
+  var report_filenames = ["Daniel.docx", "Create.docx", "Draft.docx", "Start.docx", 
+  "Hello.docx", "Internal.docx", "Home.docx", "Use.docx", "Docum.docx"]
+
   if (id === "report") {
     x.className = "web-class";
     y.className = "";
@@ -391,7 +443,7 @@ function changeScreen(id) {
     }
 
     for (var i = 0; i < captions.length; i+= 1) {
-      captions[i].innerHTML = "Report.docx";
+      captions[i].innerHTML = report_filenames[i]
     }
      
   }
@@ -413,7 +465,7 @@ function changeScreen(id) {
     }
 
     for (var i = 0; i < captions.length; i+= 1) {
-      captions[i].innerHTML = "Hello.html";
+      captions[i].innerHTML = web_filenames[i]
     }
      
   }
@@ -422,6 +474,8 @@ function changeScreen(id) {
 var textbox = document.getElementById("text-box");
 var ricky = document.getElementById("ricky");
 var alex = document.getElementById("alex");
+var name_send = document.getElementById("name-send");
+var email = document.getElementById("email");
 
 function changeName(id) {
 
@@ -432,6 +486,12 @@ function changeName(id) {
     ricky.className = ""
     alex.style.color = "white";
     ricky.style.color = "black";
+    name_send.innerHTML = "Alex"
+    
+    email.innerHTML = "alex232@gmail.com"
+    email.style.opacity = "0.8"
+    email.style.fontSize = "100%"
+    
 
   }
   if (id === "ricky") {
@@ -441,7 +501,12 @@ function changeName(id) {
     ricky.className = "web-class";
     alex.className = "";
     alex.style.color = "black";
-
+    name_send.innerHTML = "Ricky"
+    
+    email.innerHTML = "rick12332@yahoo.com"
+    email.style.opacity = "0.8"
+    email.style.fontSize = "100%"
+    
   }
 }  
 
@@ -458,6 +523,7 @@ function myFunc(id) {
 }
 var iter = 0;
 function change() {
+  
   var x = document.getElementById("yes-button")
   var y = document.getElementById("cancel-button")
 
@@ -470,12 +536,15 @@ function change() {
   }
   if (iter===7) {
     y.innerHTML = "Close"
-    y.style.color = "red"
     return;
   }
   iter++;
   setTimeout(change,1000)
 
+}
+function openDoc() {
+  document.getElementById('id01').style.display='block'
+  document.getElementById('share-name').innerHTML = 'Share File: docum.docx'
 }
 function doShare(fileName) {
   var i;

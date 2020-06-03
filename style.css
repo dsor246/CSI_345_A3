@@ -75,6 +75,7 @@ html {
     width:70%;
     border: 15px solid rgba(132, 146, 166, 0.144);
     border-radius:10px;
+    cursor:pointer;
    
 }
 .image_wrapper {
@@ -211,7 +212,12 @@ html {
 .thumbnail:hover .previewed{
     visibility:visible
 }
-
+.close_pop {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+}
 .web-class{
     padding-left: 20px;
     padding-right:20px;
