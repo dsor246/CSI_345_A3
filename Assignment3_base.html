@@ -36,13 +36,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
             </div>
           <ul class="nested">
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names">Hello.css</span>
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.css</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names">Hello.js</span>
+              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large">Hello.js</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names" onclick="document.getElementById('id01').style.display='block'">Hello.html</span>
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large" onclick="document.getElementById('id01').style.display='block'">Hello.html</span>
             </div>
           </ul>
         </span></li>
@@ -54,13 +54,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
             </div>
           <ul class="nested">
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names" >page-lay.css</span>
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large" >page-lay.css</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names">master.js</span>
+              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large">master.js</span>
             </div>
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names">index.html</span>
+              <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large">index.html</span>
             </div>
           </ul>
         </span></li>
@@ -90,10 +90,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
             </div>
           <ul class="nested">
             <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names">Hi.css</span>
-            </div>
-            <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="./js_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names">Common.js</span>
+              <img class="w3-round w3-margin-right" src="./css_logo.png" style="width:18%;"><span onclick = "openDoc()" class="w3-opacity w3-large side-names">Hi.css</span>
             </div>
             <div class="w3-container">
               <img class="w3-round w3-margin-right" src="./html_logo.png" style="width:18%;"><span class="w3-opacity w3-large side-names">Bob.html</span>
@@ -427,6 +424,9 @@ function changeScreen(id) {
   var report_filenames = ["Daniel.docx", "Create.docx", "Draft.docx", "Start.docx", 
   "Hello.docx", "Internal.docx", "Home.docx", "Use.docx", "Docum.docx"]
 
+  var report_sidenames = ["Hello.docx", "Internal.docx", "Home.docx", "Use.docx", "Docum.docx"]
+  var web_sidenames = ["Well.html", "Daniel.css", "Creep.js", "Bob.html", "Hi.css"]
+
   if (id === "report") {
     x.className = "web-class";
     y.className = "";
@@ -447,8 +447,8 @@ function changeScreen(id) {
       captions[i].innerHTML = report_filenames[i]
     }
 
-    for (var i = 0; i < captions.length; i+= 1) {
-      sidenames[i].innerHTML = report_filenames[i]
+    for (var i = 0; i < sidenames.length; i+= 1) {
+      sidenames[i].innerHTML = report_sidenames[i]
     }
 
     
@@ -475,8 +475,8 @@ function changeScreen(id) {
       captions[i].innerHTML = web_filenames[i]
     }
 
-    for (var i = 0; i < captions.length; i += 1) {
-      sidenames[i].innerHTML = web_filesnames[i]
+    for (var i = 0; i < sidenames.length; i += 1) {
+      sidenames[i].innerHTML = web_sidenames[i]
     }
      
   }
