@@ -243,11 +243,9 @@ html {
     background-color: rgba(214, 214, 214, 0.17);
 }
 #new {
-    transition: box-shadow 0.2s ease-in;
-    transition: background-color 0.1s ease-in
-    transition: background-color 1s ease-out
-
+    transition:box-shadow 0.2s ease-in;
 }
+
 ul, #myUL {
     list-style-type: none;
 }
@@ -283,4 +281,19 @@ ul, #myUL {
 
 .w3-container img {
     margin:10px;
+}
+
+#callout {
+    animation: 1s ease-out 0s 1 pop-out;
+}
+#pop-text {
+    animation: 1s ease-out 0s 1 pop-text;
+}
+@keyframes pop-out {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-0%);
+    }
 }
