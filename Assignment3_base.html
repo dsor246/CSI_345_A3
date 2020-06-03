@@ -406,11 +406,14 @@ function w3_close() {
 function close_share(){
   document.getElementById("id01").style.display = "none";
 }
+
+//Activates drop-down list when clicked
 function dropDown() {
   var x = document.getElementById("drop-down") 
   x.style.visibility = "visible";
 }
 
+//When eye icon is clicked, set as the main-icon
 function eye() {
   var x = document.getElementById("drop-down-main") 
   var y = document.getElementById("drop-down");
@@ -438,7 +441,6 @@ function changeScreen(id) {
   
   var web_filenames = ["Daniel.css", "Well.html", "Hello.html", "Creep.js", 
   "Well.html", "Daniel.css", "Creep.js", "Bob.html", "Hi.css"]
-
   var report_filenames = ["Daniel.docx", "Create.docx", "Draft.docx", "Start.docx", 
   "Hello.docx", "Internal.docx", "Home.docx", "Use.docx", "Docum.docx"]
 
