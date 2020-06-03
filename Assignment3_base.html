@@ -151,8 +151,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
         <div class = "Bar" style = "border-radius:5px;margin-left:0px;margin-top:8px;width:94%;height:25px;border:1px solid #000;">
           <span id = "email" style="margin-left:7px;font-size:13.7px;opacity: 0.2;color:black;font-weight:lighter;">Enter names or email addresses</span>
           <div class = "icons" style = "display:inline-block;position:absolute;left:90%">
-            <img style = "width:40%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
-            <img style = "width:40%;" src="https://img.icons8.com/material/24/000000/give-way.png"/>
+            <img id = "drop-down-main" style = "width:40%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
+            <img onclick = "dropDown()" style = "cursor:pointer;width:40%;" src="https://img.icons8.com/material/24/000000/give-way.png"/>
+            <div id = "drop-down" style = "visibility:hidden;padding-top:10%;padding-bottom:20%;text-align:center;height:9vh;margin-left:-10%; width:70%;background-color: rgb(255, 255, 255);">
+              <img onclick = "eye()" src="https://img.icons8.com/ios-glyphs/30/000000/visible.png"/>
+              <img style = "display:block" src="https://img.icons8.com/windows/32/000000/trash.png"/>
+            </div>
         </div>
         </div>
         
@@ -402,7 +406,18 @@ function w3_close() {
 function close_share(){
   document.getElementById("id01").style.display = "none";
 }
+function dropDown() {
+  var x = document.getElementById("drop-down") 
+  x.style.visibility = "visible";
+}
 
+function eye() {
+  var x = document.getElementById("drop-down-main") 
+  var y = document.getElementById("drop-down");
+  x.src = "https://img.icons8.com/ios-glyphs/30/000000/visible.png"
+  y.style.visibility = "hidden";
+
+}
 // Closes the confirmation pop-up
 function close_pop(){
   document.getElementById("confID").style.display = "none";
