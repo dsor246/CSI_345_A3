@@ -239,6 +239,16 @@ html {
     background-color:rgb(255, 255, 255);
 }
 
+#new:hover {
+    box-shadow:-5px -10px red; 
+    background-color: rgba(214, 214, 214, 0.17);
+}
+#new {
+    transition: box-shadow 0.2s ease-in;
+    transition: background-color 0.1s ease-in
+    transition: background-color 1s ease-out
+
+}
 ul, #myUL {
     list-style-type: none;
 }
