@@ -20,7 +20,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
 <nav class="style-3 scrollbar force-overflow w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:280px;overflow:display;" id="mySidebar">
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-large">
     <div id = "callout" style = "text-align:left;">
-      <img id ="plane" src="./title.png" style="width:60%;"><span id = "pop-text" style="font-size:140%;color:rgb(0, 7, 145);font-weight:bolder">Share</span>
+      <img  src="./title.png" style="width:60%;"><span id = "pop-text" style="font-size:140%;color:rgb(0, 7, 145);font-weight:bolder">Share</span>
     </div>
   </a>
   <a style="text-decoration:none;" href ="#">
@@ -198,7 +198,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
       <span onclick="close_pop()"
       class="w3-button w3-right" style="background: url(https://img.icons8.com/material-sharp/30/000000/cancel.png);height:29px;width:20px;">     
       </span> 
-      <heading style="font-size:16px;">Share file <span style ="color:darkmagenta">Hello.html</span> to <span id="name-send" style="color:orangered">Ricky?</span></heading>
+      <heading style="font-size:16px;">Share file <span id = "pop-name" style ="color:darkmagenta">Hello.html</span> to <span id="name-send" style="color:orangered">Ricky?</span></heading>
       <hr style="height:1px;margin-top:2px;width:80%;margin:auto;background-color:crimson;"></hr>
       <div class = "privileges" style="display:inline-block">
         <p><pre>Privileges: <img style="opacity:0.3;" src="https://img.icons8.com/material-sharp/22/000000/edit.png"> <img src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/> <img style= "opacity:0.3;" src="https://img.icons8.com/ios-glyphs/22/000000/trash--v1.png"/></p></pre>
@@ -446,6 +446,7 @@ function changeScreen(id) {
   var previews = document.getElementsByClassName("previewed");
   var captions = document.getElementsByClassName("caption");
   var sidenames = document.getElementsByClassName("side-names");
+
   
   var web_filenames = ["Daniel.css", "Well.html", "Hello.html", "Creep.js", 
   "Well.html", "Daniel.css", "Creep.js", "Bob.html", "Hi.css"]
@@ -462,6 +463,7 @@ function changeScreen(id) {
     x.style.color = "white"
     y.style.color = "black";
     y.style.backgroundColor = "";
+    
 
     for (var i = 0; i < images.length; i+= 1) {
       images[i].src = "Quick_Access_images/report.png";
@@ -588,11 +590,15 @@ function change() {
 function openDocum() {
   document.getElementById('id01').style.display='block'
   document.getElementById('share-name').innerHTML = 'Share File: docum.docx'
+  document.getElementById("pop-name").innerHTML = "docum.docx"
+
 }
 
 function openDoc() {
   document.getElementById('id01').style.display='block'
   document.getElementById('share-name').innerHTML = 'Share File: Hello.html'
+  document.getElementById("pop-name").innerHTML = "Hello.html"
+
 }
 
 function doShare(fileName) {

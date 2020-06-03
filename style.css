@@ -284,7 +284,7 @@ ul, #myUL {
 }
 
 #callout {
-    animation: 1s ease-out 0s 1 pop-out;
+    animation: 1.5s ease-out 0s 1 pop-out;
 }
 #pop-text {
     animation: 1s ease-out 0s 1 pop-text;
@@ -295,5 +295,7 @@ ul, #myUL {
     }
     100% {
         transform: translateX(-0%);
+
     }
 }
+
