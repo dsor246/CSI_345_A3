@@ -237,7 +237,24 @@ html {
     border:1px;
     background-color:rgb(255, 255, 255);
 }
-
+.addBtn {
+  padding: 2%;
+  width: 10%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.addBtn:hover {
+  background-color: #bbb;
+}
+ul li:hover {
+  background: #ddd;
+}
 #new:hover {
     box-shadow:-5px -10px red; 
     background-color: rgba(214, 214, 214, 0.17);
