@@ -32,7 +32,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
   </a>
   <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu"
   class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil w3-margin-right"></i>Quick Share</i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="openDocum()"><i class="fa fa-pencil w3-margin-right"></i>Quick Share</i></a>
   <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Files (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
   <div id="Demo1" class="w3-hide w3-animate-left">
     <!-- Tree view -->
@@ -132,7 +132,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
           <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
           <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
           </a>
-          <img class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span id = "image-label" style = "margin-top:0%;"> Hello.html</span>
+          <img id = "share-image" class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span id = "image-label" style = "margin-top:0%;"> Hello.html</span>
           <p style = "margin-top:10%;margin-left:5%;">last modified: 21/04/2020</p>
         </div>
         
@@ -281,10 +281,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
             </div>
             <div class = "image_wrapper">
               <a class = "thumbnail" href="#">
-                <span><img class = "previewed" src="Quick_Access_images/html.png"></span>
+                <span><img class = "previewed" src="Quick_Access_images/html1.png"></span>
                 <img class = "preview-button" style = "width:19px;position:absolute;right:30%;" src="https://img.icons8.com/ios-glyphs/22/000000/visible.png"/>
                 </a>
-              <img onclick="openDoc()" class = "Quick_Access_Folder" src="Quick_Access_images/html.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
+              <img onclick="openDoc()" class = "Quick_Access_Folder" src="Quick_Access_images/html1.png"><span class="caption"  style = "margin-top:0.7%;"> Hello.html </span>
               <p style = "margin-top:17%;margin-left:7%;">last modified: 19/04/2020</p>
             </div>
             <div class = "image_wrapper">
@@ -509,11 +509,21 @@ function changeScreen(id) {
     x.style.backgroundColor = "";
 
     for (var i = 0; i < images.length; i+= 1) {
-      images[i].src = "Quick_Access_images/html.png";
+      if (i===3) {
+        images[i].src = "Quick_Access_images/html1.png";
+      }else {
+        images[i].src = "Quick_Access_images/html.png";
+
+      }
     }
 
     for (var i = 0; i < previews.length; i+= 1) {
-      previews[i].src = "Quick_Access_images/html.png";
+      if (i===3) {
+        previews[i].src = "Quick_Access_images/html1.png";
+      }
+      else {
+        previews[i].src = "Quick_Access_images/html.png";
+      }
     }
 
     for (var i = 0; i < captions.length; i+= 1) {
@@ -636,6 +646,7 @@ function openDocum() {
   document.getElementById('share-name').innerHTML = 'Share File: docum.docx'
   document.getElementById("pop-name").innerHTML = "docum.docx"
   document.getElementById("image-label").innerHTML = "docum.docx"
+  document.getElementById("share-image").src = "Quick_Access_images/report.png"
 
 }
 
