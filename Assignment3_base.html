@@ -18,7 +18,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
 
 <!-- Side Navigation -->
 <nav class="style-3 scrollbar force-overflow w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:280px;overflow:display;" id="mySidebar">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-large">
+  <a style="text-decoration:none;" href="javascript:void(0)" class="w3-bar-item w3-large">
     <div id = "callout" style = "text-align:left;">
       <img  src="./title.png" style="width:60%;"><span id = "pop-text" style="font-size:140%;color:rgb(0, 7, 145);font-weight:bolder">Share</span>
     </div>
@@ -32,7 +32,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
   </a>
   <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu"
   class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">Share</i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil w3-margin-right"></i>Quick Share</i></a>
   <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Files (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
   <div id="Demo1" class="w3-hide w3-animate-left">
     <!-- Tree view -->
@@ -409,8 +409,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
         <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122); color:black"> <input type="checkbox" id="html" name="todo"> Change font</li>
       </ul>
 	    <input type="text" id="myInput2" placeholder="Enter...">
-			<span onclick="newElement2()" class="addBtn">+</span>
-	
+      <span onclick="newElement2()" class="addBtn">+</span>	
+      
 	  </div>
   </div>
 </div>
