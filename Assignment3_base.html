@@ -18,7 +18,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
 
 <!-- Side Navigation -->
 <nav class="style-3 scrollbar force-overflow w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:280px;overflow:display;" id="mySidebar">
-  <a style="text-decoration:none;" href="javascript:void(0)" class="w3-bar-item w3-large">
+  <a style="text-decoration: none;" href="javascript:void(0)" class="w3-bar-item w3-large">
     <div id = "callout" style = "text-align:left;">
       <img  src="./title.png" style="width:60%;"><span id = "pop-text" style="font-size:140%;color:rgb(0, 7, 145);font-weight:bolder">Share</span>
     </div>
@@ -372,45 +372,31 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
         </div>
       </div>
     <!-- PROGRESS CONTAINER -->
-    <div class = "Progress-content" style= "margin-left:-60px;padding:0px;margin-top:0%;height:92vh; width:15%;background-color:none ; font-size: 20px">
+    <div class = "Progress-content" style= "margin-left:-60px;padding:0px;margin-top:5%;height:92vh; width:15%;background-color:none ; font-size: 20px">
       <p style = "white-space: nowrap;position:relative;top:15px; left: 0px; font-size: 22px;text-align: center;"> TO-DO </p>
       <hr style = "border:solid 0.5px rgb(174, 0, 255);margin:auto;width:40%;background-color: rgb(174, 0, 255);">
       
-      <ul id = "myUL1" style ="padding:0px;">
-	  <p id = "demo"> </p>
-		<p>HTML - <span id="slide1"></span> %</p>
-        <input style = "width:250px" type="range" min="1" max="100" value="50" class="slider" id="testSlide">
-        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122);color:black"> <input type="checkbox" id="html" name="todo"> Redesign Landing Page</li>
-		
-		  </ul>
-	
-		  <input type="text" id="myInput" placeholder="Enter...">
-			<span onclick="newElement()" class="addBtn">+</span>
+      <ul style ="padding:0px;">
+        <li style = "font-size:18px; list-style: none">HTML - 50%</li> 
+        <input style = "width:200px" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo"> Redesign Landing Page</li>
         <br>
-		
-		      <ul id = "myUL2" style ="padding:0px;">
-        	<p>JAVA - <span id="slide2"></span> %</p>
-        <input style = "width:250px" type="range" min="1" max="100" value="30" class="slider" id="testSlide1">
-        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122);color:black"> <input type="checkbox" id="html" name="todo"  value="Bike"> Optimise A3()</li>
-        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122);color:black"> <input type="checkbox" id="html" name="todo" checked  value="Bike"> Create function A3()</li>
-        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122);color:black"> <input type="checkbox" id="html" name="todo"   value="Bike"> Create function A2()</li>
-        </ul>
-		
-		
-		  <input type="text" id="myInput1" placeholder="Enter...">
-			<span onclick="newElement1()" class="addBtn">+</span>
-		<br>
-		
-		    <ul id = "myUL3" style ="padding:0px;">
-        	<p>CSS - <span id="slide3"></span> %</p>
-        <input style = "width:250px" type="range" min="1" max="100" value="90" class="slider" id="testSlide2">
-        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122); color:black"> <input type="checkbox" id="html" checked name="todo"> Change border width </li>
-        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122); color:black"> <input type="checkbox" id="html" checked name="todo"> Make flexbox</li>
-        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122); color:black"> <input type="checkbox" id="html" name="todo"> Change font</li>
+        <li style = "font-size:18px; list-style: none">JAVA - 30%</li> 
+        <input style = "width:200px" type="range" min="1" max="100" value="30" class="slider" id="myRange">
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo"  value="Bike"> Optimise A3()</li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo" checked  value="Bike"> Create function A3()</li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo"   value="Bike"> Create function A2()</li>
+        <br>
+        <li style = "font-size:18px; list-style: none">CSS - 90%</li> 
+        <input style = "width:200px" type="range" min="1" max="100" value="90" class="slider" id="myRange">
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" checked name="todo"> Change border width </li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" checked name="todo"> Make flexbox</li>
+        <li style = "padding:3px;list-style: none;color:rgb(122, 122, 122)"> <input type="checkbox" id="html" name="todo"> Change font</li>
       </ul>
 	    <input type="text" id="myInput2" placeholder="Enter...">
       <span onclick="newElement2()" class="addBtn">+</span>	
       
+	
 	  </div>
   </div>
 </div>
@@ -535,35 +521,6 @@ var alex = document.getElementById("alex");
 var name_send = document.getElementById("name-send");
 var email = document.getElementById("email");
 
-var slider = document.getElementById("testSlide");
-var output = document.getElementById("slide1");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-
-
-
-var slider1 = document.getElementById("testSlide1");
-var output1 = document.getElementById("slide2");
-output1.innerHTML = slider1.value;
-
-slider1.oninput = function() {
-  output1.innerHTML = this.value;
-}
-
-
-
-var slider2 = document.getElementById("testSlide2");
-var output2 = document.getElementById("slide3");
-output2.innerHTML = slider2.value;
-
-slider2.oninput = function() {
-  output2.innerHTML = this.value;
-}
-
-
 function changeName(id) {
 
   if (id === "alex") {
@@ -647,82 +604,6 @@ function openDoc() {
 
 
 }
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-    var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u2610 ");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL1").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
-
-
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      
-    }
-  }
-}
-function newElement1() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput1").value;
-    var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u2610 ");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL2").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
-
-
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      
-    }
-  }
-}
-function newElement2() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput2").value;
-    var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u2610 ");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL3").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
-
-
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      
-    }
-  }
-}
-
 
 function doShare(fileName) {
   var i;
