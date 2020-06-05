@@ -117,7 +117,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
 <div id="id01" class="w3-modal" style="z-index:4;margin:0px;">
   <div class="w3-modal-content w3-animate-zoom" style="border-radius:20px;width:40%;height:50vh">
     <div class="heading" style = "text-align: center;background-color:#EF2230;border-radius:20px;height:8%">
-       <span onclick="document.getElementById('id01').style.display='none'"
+       <span onclick="close_share()"
        class="w3-button w3-right" style="background: url(https://img.icons8.com/material-sharp/30/000000/cancel.png);height:29px;width:20px;">
       </span>
       <h2 id = "share-name" style="color:white; font-size: 23px;">Share File: Hello.html</h2>
@@ -430,8 +430,8 @@ function w3_close() {
 // Closes share function screen and resets the content to default
 function close_share(){
   document.getElementById("id01").style.display = "none";
-  document.getElementById("drop-down").style.visibility = "hidden";
   document.getElementById("drop-down-main").src = "https://img.icons8.com/material-sharp/24/000000/edit.png"
+  document.getElementById("drop-down").style.visibility = "hidden";
 }
 
 //Activates drop-down list when clicked
