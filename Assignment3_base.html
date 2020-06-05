@@ -162,7 +162,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif; curs
             <img id = "drop-down-main" style = "width:40%;" src="https://img.icons8.com/material-sharp/24/000000/edit.png"/>
             <img onclick = "dropDown()" style = "cursor:pointer;width:40%;" src="https://img.icons8.com/material/24/000000/give-way.png"/>
             <div id = "drop-down" style = "visibility:hidden;padding-top:10%;padding-bottom:20%;text-align:center;height:9vh;margin-left:-10%; width:70%;background-color: rgb(255, 255, 255);">
-              <img onclick = "eye()" src="https://img.icons8.com/ios-glyphs/30/000000/visible.png"/>
+              <img id ="onclick" onclick = "eye()" src="https://img.icons8.com/ios-glyphs/30/000000/visible.png"/>
               <img style = "display:block" src="https://img.icons8.com/windows/32/000000/trash.png"/>
             </div>
         </div>
@@ -446,7 +446,7 @@ function eye() {
   var y = document.getElementById("drop-down");
   x.src = "https://img.icons8.com/ios-glyphs/30/000000/visible.png"
   y.style.visibility = "hidden";
-
+  document.getElementById("onclick").src = "https://img.icons8.com/material-sharp/24/000000/edit.png"
 }
 // Closes the confirmation pop-up
 function close_pop(){
